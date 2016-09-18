@@ -17,6 +17,7 @@ class LoginPageViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -103,7 +104,14 @@ class LoginPageViewController: UIViewController {
                         //Login is Successful
                         NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
                         NSUserDefaults.standardUserDefaults().synchronize();
-                        self.dismissViewControllerAnimated(true, completion: nil);
+                       // self.dismissViewControllerAnimated(true, completion: nil);
+                        
+                        NSOperationQueue.mainQueue().addOperationWithBlock {
+                            
+                        
+                        self.performSegueWithIdentifier("LoginHome", sender: self);
+                        }
+                       
                     }
                     
                     if(resultValue=="error")

@@ -13,13 +13,50 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Display user detail screen upon first login
+        
+        // Check if its first login
+        
+        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        print (isUserLoggedIn);
+        
+        if(isUserLoggedIn)
+            
+        { print("User logged in")
+            
+            if(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin?????"))
+                
+            { //first launch will be false, so it will jump to else statement
+                
+                print("why am i here")
+            }
+                
+            else {
+                // display data entry screen
+                
+          //      let FirstLoginView:FirstLoginViewController = FirstLoginViewController();
+                
+           //     self.presentViewController(FirstLoginView, animated: true, completion: nil)
+                
+                print("this is my first time logging in")
+                
+                dispatch_async(dispatch_get_main_queue(),{
+                    
+                    
+                self.performSegueWithIdentifier("FirstLogin", sender: self);
+                    })
+                
+                
+                // changing key to true now to reflect subsequent (not first) launches
+                
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstTimeLogin?????");
+                NSUserDefaults.standardUserDefaults().synchronize();
+                print(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin?????"));
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     override func viewDidAppear(animated: Bool)
     {
         // Protected screen is only supposed to show loginView if user is not logged in
@@ -34,11 +71,19 @@ class ViewController: UIViewController {
         if(!isUserLoggedIn)
         {
             
-        // go to loginView
-        
-        self.performSegueWithIdentifier("loginView", sender: self);
-    
+            // go to loginView
+            
+            self.performSegueWithIdentifier("loginView", sender: self);
+            
         }
+    }
+
+    // another function
+    
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func LogoutButtonTapped(sender: AnyObject)

@@ -16,6 +16,10 @@
 		3414D74E1D81993B00878CE8 /* MoveitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D74D1D81993B00878CE8 /* MoveitUITests.swift */; };
 		3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D75B1D81A33600878CE8 /* RegisterPageViewController.swift */; };
 		3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */; };
+		348A7E361D8E6BBB00E9D930 /* Elijah Hail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */; };
+		348A7E381D8E72EA00E9D930 /* Drmakete Lab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */; };
+		348A7E3A1D8E7C1400E9D930 /* LoginBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E391D8E7C1400E9D930 /* LoginBG.jpg */; };
+		348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		3414D74F1D81993B00878CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3414D75B1D81A33600878CE8 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Elijah Hail.jpg"; sourceTree = "<group>"; };
+		348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Drmakete Lab.jpg"; sourceTree = "<group>"; };
+		348A7E391D8E7C1400E9D930 /* LoginBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginBG.jpg; sourceTree = "<group>"; };
+		348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +112,15 @@
 				3414D72D1D81993B00878CE8 /* AppDelegate.swift */,
 				3414D72F1D81993B00878CE8 /* ViewController.swift */,
 				3414D7311D81993B00878CE8 /* Main.storyboard */,
+				348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */,
+				348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */,
+				348A7E391D8E7C1400E9D930 /* LoginBG.jpg */,
 				3414D7341D81993B00878CE8 /* Assets.xcassets */,
 				3414D7361D81993B00878CE8 /* LaunchScreen.storyboard */,
 				3414D7391D81993B00878CE8 /* Info.plist */,
 				3414D75B1D81A33600878CE8 /* RegisterPageViewController.swift */,
 				3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */,
+				348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */,
 			);
 			name = UserLoginandRegistration;
 			path = Moveit;
@@ -236,7 +248,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348A7E3A1D8E7C1400E9D930 /* LoginBG.jpg in Resources */,
 				3414D7381D81993B00878CE8 /* LaunchScreen.storyboard in Resources */,
+				348A7E381D8E72EA00E9D930 /* Drmakete Lab.jpg in Resources */,
+				348A7E361D8E6BBB00E9D930 /* Elijah Hail.jpg in Resources */,
 				3414D7351D81993B00878CE8 /* Assets.xcassets in Resources */,
 				3414D7331D81993B00878CE8 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +280,7 @@
 			files = (
 				3414D7301D81993B00878CE8 /* ViewController.swift in Sources */,
 				3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */,
+				348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */,
 				3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */,
 				3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */,
 			);
