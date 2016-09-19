@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */; };
+		341096D51D9025BC001E6B8D /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D41D9025BC001E6B8D /* KDCircularProgress.swift */; };
+		341096D71D903A19001E6B8D /* DeathtoStock_NotStock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */; };
 		3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D72D1D81993B00878CE8 /* AppDelegate.swift */; };
 		3414D7301D81993B00878CE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D72F1D81993B00878CE8 /* ViewController.swift */; };
 		3414D7331D81993B00878CE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3414D7311D81993B00878CE8 /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPopUpViewController.swift; sourceTree = "<group>"; };
+		341096D41D9025BC001E6B8D /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
+		341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DeathtoStock_NotStock.jpg; sourceTree = "<group>"; };
 		3414D72A1D81993B00878CE8 /* Moveit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moveit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3414D72D1D81993B00878CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3414D72F1D81993B00878CE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,12 +121,15 @@
 				348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */,
 				348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */,
 				348A7E391D8E7C1400E9D930 /* LoginBG.jpg */,
+				341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */,
 				3414D7341D81993B00878CE8 /* Assets.xcassets */,
 				3414D7361D81993B00878CE8 /* LaunchScreen.storyboard */,
 				3414D7391D81993B00878CE8 /* Info.plist */,
+				341096D41D9025BC001E6B8D /* KDCircularProgress.swift */,
 				3414D75B1D81A33600878CE8 /* RegisterPageViewController.swift */,
 				3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */,
 				348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */,
+				341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */,
 			);
 			name = UserLoginandRegistration;
 			path = Moveit;
@@ -252,6 +261,7 @@
 				3414D7381D81993B00878CE8 /* LaunchScreen.storyboard in Resources */,
 				348A7E381D8E72EA00E9D930 /* Drmakete Lab.jpg in Resources */,
 				348A7E361D8E6BBB00E9D930 /* Elijah Hail.jpg in Resources */,
+				341096D71D903A19001E6B8D /* DeathtoStock_NotStock.jpg in Resources */,
 				3414D7351D81993B00878CE8 /* Assets.xcassets in Resources */,
 				3414D7331D81993B00878CE8 /* Main.storyboard in Resources */,
 			);
@@ -282,7 +292,9 @@
 				3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */,
 				348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */,
 				3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */,
+				341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */,
 				3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */,
+				341096D51D9025BC001E6B8D /* KDCircularProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

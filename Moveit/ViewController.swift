@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var img: UIImageView!
+    
+    @IBOutlet weak var img2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        img.layer.cornerRadius = img.frame.size.width/2
+        img.clipsToBounds = true
+        
+        img2.layer.cornerRadius = img2.frame.size.width/2
+        img2.clipsToBounds = true
         
         // Display user detail screen upon first login
         
@@ -25,7 +34,7 @@ class ViewController: UIViewController {
             
         { print("User logged in")
             
-            if(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin?????"))
+            if(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin????????????????"))
                 
             { //first launch will be false, so it will jump to else statement
                 
@@ -35,24 +44,30 @@ class ViewController: UIViewController {
             else {
                 // display data entry screen
                 
-          //      let FirstLoginView:FirstLoginViewController = FirstLoginViewController();
-                
-           //     self.presentViewController(FirstLoginView, animated: true, completion: nil)
-                
                 print("this is my first time logging in")
                 
-                dispatch_async(dispatch_get_main_queue(),{
+           //     dispatch_async(dispatch_get_main_queue(),{
                     
                     
-                self.performSegueWithIdentifier("FirstLogin", sender: self);
-                    })
+           //     self.performSegueWithIdentifier("FirstLogin", sender: self);
+           //         })
+                
+                
+                // show view as popover over current viewcontroller
+                
+                let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FirstLogin") as! FirstLoginViewController
+                self.addChildViewController(popOverVC)
+                popOverVC.view.frame = self.view.frame
+                self.view.addSubview(popOverVC.view)
+                popOverVC.didMoveToParentViewController(self)
+                
                 
                 
                 // changing key to true now to reflect subsequent (not first) launches
                 
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstTimeLogin?????");
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstTimeLogin????????????????");
                 NSUserDefaults.standardUserDefaults().synchronize();
-                print(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin?????"));
+                print(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin????????????????"));
             }
         }
     }

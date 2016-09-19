@@ -13,6 +13,7 @@ class RegisterPageViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
