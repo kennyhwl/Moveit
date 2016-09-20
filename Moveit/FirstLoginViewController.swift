@@ -8,26 +8,44 @@
 
 import UIKit
 
-class FirstLoginViewController: UIViewController {
+class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var img: UIImageView!
+    
+    
+    @IBAction func uploadButtonTapped(sender: AnyObject) {
+        //choose profile picture when upload is tapped
+        
+        var myPickerController = UIImagePickerController()
+        myPickerController.delegate = self;
+        myPickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        self.presentViewController(myPickerController, animated: true, completion: nil)
+    }
+    
+    
+        //function to take selected image to display on view
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        img.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
         //make img circle
         img.layer.cornerRadius = img.frame.size.width/2
         img.clipsToBounds = true
         
-        // background outside of popup
+        // background outside of popup grayish
         
-        self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
+        self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(1)
         
         //show animation
         self.showAnimate()
         
-        // show intro popup
+        // show intro popup when user comes to this first login page
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("IntroPopUp") as! IntroPopUpViewController
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
@@ -55,10 +73,43 @@ class FirstLoginViewController: UIViewController {
         
         // store the associated textfields in a var
         
-        let userFirstName = userFirstNameTextField.text
-        let userLastName = userLastNameTextField.text
-        let userAge = userAgeTextField.text
-        let userFaculty = userFacultyTextField.text
+        let userFirstName = userFirstNameTextField.text!
+        let userLastName = userLastNameTextField.text!
+        let userAge = userAgeTextField.text!
+        let userFaculty = userFacultyTextField.text!
+        
+        //function to produce alerts/notifications
+        
+        func displayMyAlertMessage(userMessage: String)
+        {
+            // producing the alert as a popup - style is controller
+            
+            let myAlert = UIAlertController(title:"Notice", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert);
+            
+            // producing the confirmation button as an action - style is action [note: handler addition is only required for functions]
+            
+            let confirmationAction = UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler:nil)
+            
+            // linking the confirmation action to the alert popup [note: this is only required for functions]
+            
+            myAlert.addAction(confirmationAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+        }
+        
+        //check if fields are filled in
+        
+        if(userFirstName.isEmpty || userLastName.isEmpty || userAge.isEmpty || userFaculty.isEmpty)
+        {
+            // display alert message
+            
+            displayMyAlertMessage("All fields are required!");
+            
+            return;
+            
+        }
+        
+        
         
         //storing user input locally
         
@@ -74,7 +125,7 @@ class FirstLoginViewController: UIViewController {
         
         self.removeAnimate()
         
-        //self.view.removeFromSuperview()
+        //need to add code to read image and send to server side
         
     }
     

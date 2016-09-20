@@ -10,6 +10,8 @@
 		341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */; };
 		341096D51D9025BC001E6B8D /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D41D9025BC001E6B8D /* KDCircularProgress.swift */; };
 		341096D71D903A19001E6B8D /* DeathtoStock_NotStock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */; };
+		341096E31D915B0C001E6B8D /* upload profile pic-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 341096E21D915B0C001E6B8D /* upload profile pic-2.png */; };
+		341096E51D915E9D001E6B8D /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 341096E41D915E9D001E6B8D /* Logo.png */; };
 		3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D72D1D81993B00878CE8 /* AppDelegate.swift */; };
 		3414D7301D81993B00878CE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D72F1D81993B00878CE8 /* ViewController.swift */; };
 		3414D7331D81993B00878CE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3414D7311D81993B00878CE8 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		348A7E381D8E72EA00E9D930 /* Drmakete Lab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */; };
 		348A7E3A1D8E7C1400E9D930 /* LoginBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E391D8E7C1400E9D930 /* LoginBG.jpg */; };
 		348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */; };
+		34EEA22A1D919652008007D7 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EEA2291D919652008007D7 /* 01.jpg */; };
+		34EEA22C1D919D3B008007D7 /* Jeffrey Swanson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EEA22B1D919D3B008007D7 /* Jeffrey Swanson.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,8 @@
 		341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPopUpViewController.swift; sourceTree = "<group>"; };
 		341096D41D9025BC001E6B8D /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DeathtoStock_NotStock.jpg; sourceTree = "<group>"; };
+		341096E21D915B0C001E6B8D /* upload profile pic-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload profile pic-2.png"; sourceTree = "<group>"; };
+		341096E41D915E9D001E6B8D /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		3414D72A1D81993B00878CE8 /* Moveit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moveit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3414D72D1D81993B00878CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3414D72F1D81993B00878CE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +71,8 @@
 		348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Drmakete Lab.jpg"; sourceTree = "<group>"; };
 		348A7E391D8E7C1400E9D930 /* LoginBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginBG.jpg; sourceTree = "<group>"; };
 		348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
+		34EEA2291D919652008007D7 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		34EEA22B1D919D3B008007D7 /* Jeffrey Swanson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jeffrey Swanson.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +127,11 @@
 				3414D72F1D81993B00878CE8 /* ViewController.swift */,
 				3414D7311D81993B00878CE8 /* Main.storyboard */,
 				348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */,
+				34EEA22B1D919D3B008007D7 /* Jeffrey Swanson.jpg */,
+				34EEA2291D919652008007D7 /* 01.jpg */,
 				348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */,
+				341096E41D915E9D001E6B8D /* Logo.png */,
+				341096E21D915B0C001E6B8D /* upload profile pic-2.png */,
 				348A7E391D8E7C1400E9D930 /* LoginBG.jpg */,
 				341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */,
 				3414D7341D81993B00878CE8 /* Assets.xcassets */,
@@ -257,10 +269,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EEA22A1D919652008007D7 /* 01.jpg in Resources */,
+				341096E51D915E9D001E6B8D /* Logo.png in Resources */,
 				348A7E3A1D8E7C1400E9D930 /* LoginBG.jpg in Resources */,
 				3414D7381D81993B00878CE8 /* LaunchScreen.storyboard in Resources */,
 				348A7E381D8E72EA00E9D930 /* Drmakete Lab.jpg in Resources */,
+				34EEA22C1D919D3B008007D7 /* Jeffrey Swanson.jpg in Resources */,
 				348A7E361D8E6BBB00E9D930 /* Elijah Hail.jpg in Resources */,
+				341096E31D915B0C001E6B8D /* upload profile pic-2.png in Resources */,
 				341096D71D903A19001E6B8D /* DeathtoStock_NotStock.jpg in Resources */,
 				3414D7351D81993B00878CE8 /* Assets.xcassets in Resources */,
 				3414D7331D81993B00878CE8 /* Main.storyboard in Resources */,

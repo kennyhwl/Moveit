@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var img: UIImageView!
@@ -17,11 +18,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //rounding images
         img.layer.cornerRadius = img.frame.size.width/2
         img.clipsToBounds = true
         
         img2.layer.cornerRadius = img2.frame.size.width/2
         img2.clipsToBounds = true
+        
+        //getting rid of pesky navigation bar thing appearing on top
+       // self.edgesForExtendedLayout = UIRectEdge.None;
         
         // Display user detail screen upon first login
         
@@ -34,7 +40,7 @@ class ViewController: UIViewController {
             
         { print("User logged in")
             
-            if(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin????????????????"))
+            if(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin!!!!!!"))
                 
             { //first launch will be false, so it will jump to else statement
                 
@@ -65,9 +71,9 @@ class ViewController: UIViewController {
                 
                 // changing key to true now to reflect subsequent (not first) launches
                 
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstTimeLogin????????????????");
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstTimeLogin!!!!!!");
                 NSUserDefaults.standardUserDefaults().synchronize();
-                print(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin????????????????"));
+                print(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin!!!!!!"));
             }
         }
     }
