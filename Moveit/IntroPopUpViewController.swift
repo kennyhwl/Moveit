@@ -15,7 +15,7 @@ class IntroPopUpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +23,7 @@ class IntroPopUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func CloseIntroPopUp(sender: AnyObject) {
+    @IBAction func CloseIntroPopUp(_ sender: AnyObject) {
         
         //remove popup
         self.view.removeFromSuperview()

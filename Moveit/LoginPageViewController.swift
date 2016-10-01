@@ -27,7 +27,7 @@ class LoginPageViewController: UIViewController {
     
     // Code to program what happens upon clicking the login button
     
-    @IBAction func loginButtonTapped(sender: AnyObject) {
+    @IBAction func loginButtonTapped(_ sender: AnyObject) {
         
         let userEmail = userEmailTextField.text!;
         let userPassword = userPasswordTextField.text!;
@@ -71,17 +71,17 @@ class LoginPageViewController: UIViewController {
         
         // send user data to server
         
-        let myUrl = NSURL(string: "http://www.earthlandia.com/user-register/userLogin.php");
-        let request = NSMutableURLRequest(URL:myUrl!);
-        request.HTTPMethod = "POST";
+        let myUrl = URL(string: "http://www.earthlandia.com/user-register/userLogin.php");
+        var request = URLRequest(url:myUrl!);
+        request.httpMethod = "POST";
         
         let postString = "email=\(userEmail)&password=\(userPassword)";
         
-        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding);
+        request.httpBody = postString.data(using: String.Encoding.utf8);
         
         // task starts
         
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
             data, response, error in
             
             if error != nil {
@@ -93,7 +93,7 @@ class LoginPageViewController: UIViewController {
             
          //   var err: NSError?
             do {
-            var json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as? NSDictionary
+            var json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
             
                 if let parseJSON = json {
                     var resultValue = parseJSON["status"] as? String
@@ -102,14 +102,14 @@ class LoginPageViewController: UIViewController {
                     if(resultValue=="Success")
                     {
                         //Login is Successful
-                        NSUserDefaults.standardUserDefaults().setBool(true, forKey:"isUserLoggedIn");
-                        NSUserDefaults.standardUserDefaults().synchronize();
+                        UserDefaults.standard.set(true, forKey:"isUserLoggedIn");
+                        UserDefaults.standard.synchronize();
                        // self.dismissViewControllerAnimated(true, completion: nil);
                         
-                        NSOperationQueue.mainQueue().addOperationWithBlock {
+                        OperationQueue.main.addOperation {
                             
                         
-                        self.performSegueWithIdentifier("LoginHome", sender: self);
+                        self.performSegue(withIdentifier: "LoginHome", sender: self);
                         }
                        
                     }
@@ -117,14 +117,14 @@ class LoginPageViewController: UIViewController {
                     if(resultValue=="error")
                     {
                         
-                        dispatch_async(dispatch_get_main_queue(), {
+                        DispatchQueue.main.async(execute: {
                         
-                        let myAlert = UIAlertController(title:"Alert", message: "Incorrect fields entered", preferredStyle: UIAlertControllerStyle.Alert);
+                        let myAlert = UIAlertController(title:"Alert", message: "Incorrect fields entered", preferredStyle: UIAlertControllerStyle.alert);
                         
-                        let okAction = UIAlertAction(title: "Ok", style:UIAlertActionStyle.Default, handler: nil)
+                        let okAction = UIAlertAction(title: "Ok", style:UIAlertActionStyle.default, handler: nil)
                         
                         myAlert.addAction(okAction);
-                        self.presentViewController(myAlert, animated: true, completion: nil);
+                        self.present(myAlert, animated: true, completion: nil);
                     
                         });
                     }
@@ -137,7 +137,7 @@ class LoginPageViewController: UIViewController {
             
             
         
-        }
+        })
         
         task.resume()
         

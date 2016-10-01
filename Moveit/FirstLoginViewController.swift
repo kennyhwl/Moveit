@@ -13,21 +13,21 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var img: UIImageView!
     
     
-    @IBAction func uploadButtonTapped(sender: AnyObject) {
+    @IBAction func uploadButtonTapped(_ sender: AnyObject) {
         //choose profile picture when upload is tapped
         
-        var myPickerController = UIImagePickerController()
+        let myPickerController = UIImagePickerController()
         myPickerController.delegate = self;
-        myPickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        self.presentViewController(myPickerController, animated: true, completion: nil)
+        myPickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        self.present(myPickerController, animated: true, completion: nil)
     }
     
     
         //function to take selected image to display on view
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
         img.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -40,17 +40,17 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         
         // background outside of popup grayish
         
-        self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(1)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(1)
         
         //show animation
         self.showAnimate()
         
         // show intro popup when user comes to this first login page
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("IntroPopUp") as! IntroPopUpViewController
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IntroPopUp") as! IntroPopUpViewController
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
-        popOverVC.didMoveToParentViewController(self)
+        popOverVC.didMove(toParentViewController: self)
         
     }
     
@@ -69,7 +69,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
 
     
     //done button tapped
-    @IBAction func closePopUpView(sender: AnyObject) {
+    @IBAction func closePopUpView(_ sender: AnyObject) {
         
         // store the associated textfields in a var
         
@@ -80,21 +80,21 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         
         //function to produce alerts/notifications
         
-        func displayMyAlertMessage(userMessage: String)
+        func displayMyAlertMessage(_ userMessage: String)
         {
             // producing the alert as a popup - style is controller
             
-            let myAlert = UIAlertController(title:"Notice", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert);
+            let myAlert = UIAlertController(title:"Notice", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
             
             // producing the confirmation button as an action - style is action [note: handler addition is only required for functions]
             
-            let confirmationAction = UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler:nil)
+            let confirmationAction = UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler:nil)
             
             // linking the confirmation action to the alert popup [note: this is only required for functions]
             
             myAlert.addAction(confirmationAction)
             
-            self.presentViewController(myAlert, animated: true, completion: nil)
+            self.present(myAlert, animated: true, completion: nil)
         }
         
         //check if fields are filled in
@@ -113,13 +113,13 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         
         //storing user input locally
         
-        NSUserDefaults.standardUserDefaults().setObject(userFirstName, forKey: "userFirstName");
-        NSUserDefaults.standardUserDefaults().setObject(userLastName, forKey: "userLastName");
+        UserDefaults.standard.set(userFirstName, forKey: "userFirstName");
+        UserDefaults.standard.set(userLastName, forKey: "userLastName");
 
-        NSUserDefaults.standardUserDefaults().setObject(userAge, forKey: "userAge");
-        NSUserDefaults.standardUserDefaults().setObject(userFaculty, forKey: "userFaculty")
+        UserDefaults.standard.set(userAge, forKey: "userAge");
+        UserDefaults.standard.set(userFaculty, forKey: "userFaculty")
         
-        NSUserDefaults.standardUserDefaults().synchronize();
+        UserDefaults.standard.synchronize();
         
        // close the data entry view
         
@@ -131,18 +131,18 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
     
     func showAnimate()
     {
-        self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
+        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         self.view.alpha = 0.0;
-        UIView.animateWithDuration(0.25, animations: {
+        UIView.animate(withDuration: 0.25, animations: {
             self.view.alpha = 1.0
-            self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         });
     }
     
     func removeAnimate()
     {
-        UIView.animateWithDuration(0.25, animations: {
-            self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             self.view.alpha = 0.0;
             }, completion:{(finished : Bool) in
                 if (finished)

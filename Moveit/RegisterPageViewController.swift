@@ -25,7 +25,7 @@ class RegisterPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func registerButtonTapped(sender: AnyObject) {
+    @IBAction func registerButtonTapped(_ sender: AnyObject) {
         
         let userEmail = userEmailTextField.text!;
         let userPassword = userPasswordTextField.text!;
@@ -33,21 +33,21 @@ class RegisterPageViewController: UIViewController {
         
         // function for alert display
        
-        func displayMyAlertMessage(userMessage: String)
+        func displayMyAlertMessage(_ userMessage: String)
         {
             // producing the alert as a popup - style is controller
             
-            let myAlert = UIAlertController(title:"Notice", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert);
+            let myAlert = UIAlertController(title:"Notice", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
             
             // producing the confirmation button as an action - style is action [note: handler addition is only required for functions]
             
-            let confirmationAction = UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler:nil)
+            let confirmationAction = UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler:nil)
             
             // linking the confirmation action to the alert popup [note: this is only required for functions]
             
             myAlert.addAction(confirmationAction)
             
-            self.presentViewController(myAlert, animated: true, completion: nil)
+            self.present(myAlert, animated: true, completion: nil)
         }
         
         // check for empty fields
@@ -104,17 +104,17 @@ class RegisterPageViewController: UIViewController {
         
         // Send data to server
         
-        let myUrl = NSURL(string: "http://www.earthlandia.com/user-register/userRegister.php");
-        let request = NSMutableURLRequest(URL:myUrl!);
-        request.HTTPMethod = "POST";
+        let myUrl = URL(string: "http://www.earthlandia.com/user-register/userRegister.php");
+        var request = URLRequest(url:myUrl!);
+        request.httpMethod = "POST";
         
         let postString = "email=\(userEmail)&password=\(userPassword)";
         
-        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding);
+        request.httpBody = postString.data(using: String.Encoding.utf8);
         
         // task starts
         
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
             data, response, error in
             
             if error != nil {
@@ -124,7 +124,7 @@ class RegisterPageViewController: UIViewController {
             
             //var err: NSError?
            
-            do { let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as? NSDictionary
+            do { let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
             
             if let parseJSON = json {
                 let resultValue = parseJSON["status"] as? String
@@ -140,16 +140,16 @@ class RegisterPageViewController: UIViewController {
                 }
                 
                 
-                dispatch_async(dispatch_get_main_queue(), {
+                DispatchQueue.main.async(execute: {
                    
                     // Display Alert Message
-                    let myAlert = UIAlertController(title:"Alert", message: messageToDisplay, preferredStyle: UIAlertControllerStyle.Alert);
+                    let myAlert = UIAlertController(title:"Alert", message: messageToDisplay, preferredStyle: UIAlertControllerStyle.alert);
                     
-                    let okAction = UIAlertAction(title: "Ok", style:UIAlertActionStyle.Default){ action in
-                        self.dismissViewControllerAnimated(true, completion: nil);
+                    let okAction = UIAlertAction(title: "Ok", style:UIAlertActionStyle.default){ action in
+                        self.dismiss(animated: true, completion: nil);
                 }
                     myAlert.addAction(okAction);
-                    self.presentViewController(myAlert, animated: true, completion: nil);
+                    self.present(myAlert, animated: true, completion: nil);
                 });
             
             
@@ -161,7 +161,7 @@ class RegisterPageViewController: UIViewController {
         
         
     
-        }
+        }) 
         
         task.resume()
     

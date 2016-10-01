@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */; };
-		341096D51D9025BC001E6B8D /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D41D9025BC001E6B8D /* KDCircularProgress.swift */; };
 		341096D71D903A19001E6B8D /* DeathtoStock_NotStock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */; };
 		341096E31D915B0C001E6B8D /* upload profile pic-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 341096E21D915B0C001E6B8D /* upload profile pic-2.png */; };
 		341096E51D915E9D001E6B8D /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 341096E41D915E9D001E6B8D /* Logo.png */; };
@@ -20,6 +19,7 @@
 		3414D7431D81993B00878CE8 /* MoveitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D7421D81993B00878CE8 /* MoveitTests.swift */; };
 		3414D74E1D81993B00878CE8 /* MoveitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D74D1D81993B00878CE8 /* MoveitUITests.swift */; };
 		3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D75B1D81A33600878CE8 /* RegisterPageViewController.swift */; };
+		342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CA6EC1D9FA820007EE37B /* StepsViewController.swift */; };
 		3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */; };
 		348A7E361D8E6BBB00E9D930 /* Elijah Hail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */; };
 		348A7E381D8E72EA00E9D930 /* Drmakete Lab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */; };
@@ -48,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPopUpViewController.swift; sourceTree = "<group>"; };
-		341096D41D9025BC001E6B8D /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DeathtoStock_NotStock.jpg; sourceTree = "<group>"; };
 		341096E21D915B0C001E6B8D /* upload profile pic-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload profile pic-2.png"; sourceTree = "<group>"; };
 		341096E41D915E9D001E6B8D /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		3414D74D1D81993B00878CE8 /* MoveitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveitUITests.swift; sourceTree = "<group>"; };
 		3414D74F1D81993B00878CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3414D75B1D81A33600878CE8 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		342CA6EC1D9FA820007EE37B /* StepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
 		3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Elijah Hail.jpg"; sourceTree = "<group>"; };
 		348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Drmakete Lab.jpg"; sourceTree = "<group>"; };
@@ -137,11 +137,11 @@
 				3414D7341D81993B00878CE8 /* Assets.xcassets */,
 				3414D7361D81993B00878CE8 /* LaunchScreen.storyboard */,
 				3414D7391D81993B00878CE8 /* Info.plist */,
-				341096D41D9025BC001E6B8D /* KDCircularProgress.swift */,
 				3414D75B1D81A33600878CE8 /* RegisterPageViewController.swift */,
 				3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */,
 				348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */,
 				341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */,
+				342CA6EC1D9FA820007EE37B /* StepsViewController.swift */,
 			);
 			name = UserLoginandRegistration;
 			path = Moveit;
@@ -228,18 +228,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Kenny Ho";
 				TargetAttributes = {
 					3414D7291D81993B00878CE8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					3414D73D1D81993B00878CE8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3414D7291D81993B00878CE8;
 					};
 					3414D7481D81993B00878CE8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3414D7291D81993B00878CE8;
 					};
 				};
@@ -307,10 +310,10 @@
 				3414D7301D81993B00878CE8 /* ViewController.swift in Sources */,
 				3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */,
 				348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */,
+				342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */,
 				3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */,
 				341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */,
 				3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */,
-				341096D51D9025BC001E6B8D /* KDCircularProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,8 +382,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -424,8 +429,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -444,6 +451,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -456,6 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.Moveit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -467,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.Moveit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -478,6 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.MoveitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moveit.app/Moveit";
 			};
 			name = Debug;
@@ -490,6 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.MoveitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moveit.app/Moveit";
 			};
 			name = Release;
@@ -501,6 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.MoveitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Moveit;
 			};
 			name = Debug;
@@ -512,6 +525,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.MoveitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Moveit;
 			};
 			name = Release;

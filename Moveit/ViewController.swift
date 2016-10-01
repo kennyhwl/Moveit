@@ -10,14 +10,44 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    
 
     @IBOutlet weak var img: UIImageView!
     
     @IBOutlet weak var img2: UIImageView!
     
+    //label
+    @IBOutlet weak var progressLabel: UILabel!
+    
+    //view
+    @IBOutlet weak var progressView: UIProgressView!
+    
+    //sync
+    @IBAction func actionTriggered(_ sender: AnyObject) {
+        
+        //get values from fitbit
+        let steps = 75;
+        let recommended = 100;
+        //compute the ratio for the steps done
+        let ratio = Float(steps)/Float(recommended);
+        progressView.progress = Float(ratio);
+        //message display
+        progressLabel.text = "\(ratio*100)%"
+        let percentage = ratio;
+        //store locally the percentage
+        UserDefaults.standard.set(percentage, forKey: "lastStored%");
+    }
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //show last stored values before sync
+        let lastProgress = UserDefaults.standard.float(forKey: "lastStored%")
+        progressView.progress = lastProgress;
+        progressLabel.text = "\(lastProgress*100)%"
         
         //rounding images
         img.layer.cornerRadius = img.frame.size.width/2
@@ -33,14 +63,14 @@ class ViewController: UIViewController {
         
         // Check if its first login
         
-        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
         print (isUserLoggedIn);
         
         if(isUserLoggedIn)
             
         { print("User logged in")
             
-            if(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin!!!!!!"))
+            if(UserDefaults.standard.bool(forKey: "FirstTimeLogin!!!!!!!!"))
                 
             { //first launch will be false, so it will jump to else statement
                 
@@ -61,29 +91,29 @@ class ViewController: UIViewController {
                 
                 // show view as popover over current viewcontroller
                 
-                let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FirstLogin") as! FirstLoginViewController
+                let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstLogin") as! FirstLoginViewController
                 self.addChildViewController(popOverVC)
                 popOverVC.view.frame = self.view.frame
                 self.view.addSubview(popOverVC.view)
-                popOverVC.didMoveToParentViewController(self)
+                popOverVC.didMove(toParentViewController: self)
                 
                 
                 
                 // changing key to true now to reflect subsequent (not first) launches
                 
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "FirstTimeLogin!!!!!!");
-                NSUserDefaults.standardUserDefaults().synchronize();
-                print(NSUserDefaults.standardUserDefaults().boolForKey("FirstTimeLogin!!!!!!"));
+                UserDefaults.standard.set(true, forKey: "FirstTimeLogin!!!!!!!!");
+                UserDefaults.standard.synchronize();
+                print(UserDefaults.standard.bool(forKey: "FirstTimeLogin!!!!!!!"));
             }
         }
     }
     
-    override func viewDidAppear(animated: Bool)
+    override func viewDidAppear(_ animated: Bool)
     {
         // Protected screen is only supposed to show loginView if user is not logged in
         // set a variable to identify if user is logged in or not
         
-        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
         
         // boolForKey checks if the key is 1 or 0 from login script
         
@@ -94,7 +124,7 @@ class ViewController: UIViewController {
             
             // go to loginView
             
-            self.performSegueWithIdentifier("loginView", sender: self);
+            self.performSegue(withIdentifier: "loginView", sender: self);
             
         }
     }
@@ -107,17 +137,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func LogoutButtonTapped(sender: AnyObject)
+    @IBAction func LogoutButtonTapped(_ sender: AnyObject)
     {
         // set bool back to 0 (meaning logged out state)
         
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey:"isUserLoggedIn");
+        UserDefaults.standard.set(false, forKey:"isUserLoggedIn");
         
-        NSUserDefaults.standardUserDefaults().synchronize();
+        UserDefaults.standard.synchronize();
        
         // re-present the login page again
         
-         self.performSegueWithIdentifier("loginView", sender: self);
+         self.performSegue(withIdentifier: "loginView", sender: self);
         
     }
 }
