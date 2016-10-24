@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var img: UIImageView!
     
@@ -52,6 +52,17 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParentViewController: self)
         
+        //mandatory declaration step for pickerview to set datasource and delegate to self
+        
+        facultyPicker.delegate = self;
+        facultyPicker.dataSource = self;
+        
+        activityPicker.delegate = self;
+        activityPicker.dataSource = self;
+        
+        //changing which row picker selects by default
+        facultyPicker.selectRow(3, inComponent: 0, animated: true)
+        
     }
     
 
@@ -65,7 +76,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
     
     @IBOutlet weak var userLastNameTextField: UITextField!
     @IBOutlet weak var userAgeTextField: UITextField!
-    @IBOutlet weak var userFacultyTextField: UITextField!
+    
 
     
     //done button tapped
@@ -76,7 +87,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         let userFirstName = userFirstNameTextField.text!
         let userLastName = userLastNameTextField.text!
         let userAge = userAgeTextField.text!
-        let userFaculty = userFacultyTextField.text!
+     //   let userFaculty = userFacultyTextField.text!
         
         //function to produce alerts/notifications
         
@@ -99,7 +110,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         
         //check if fields are filled in
         
-        if(userFirstName.isEmpty || userLastName.isEmpty || userAge.isEmpty || userFaculty.isEmpty)
+        if(userFirstName.isEmpty || userLastName.isEmpty || userAge.isEmpty)
         {
             // display alert message
             
@@ -117,7 +128,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         UserDefaults.standard.set(userLastName, forKey: "userLastName");
 
         UserDefaults.standard.set(userAge, forKey: "userAge");
-        UserDefaults.standard.set(userFaculty, forKey: "userFaculty")
+     //   UserDefaults.standard.set(userFaculty, forKey: "userFaculty")
         
         UserDefaults.standard.synchronize();
         
@@ -127,7 +138,53 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         
         //need to add code to read image and send to server side
         
+       //saving faculty from picker (to be changed to JSON format)
+        
+        print(chosenFaculty)
+        
+        switch (chosenFaculty)
+        {
+        case 0:
+            UserDefaults.standard.set("Faculty of Arts & Social Science", forKey: "userFaculty")
+        case 1:
+            UserDefaults.standard.set("Faculty of Business and Accountancy", forKey: "userFaculty")
+        case 2:
+            UserDefaults.standard.set("Faculty of Dentistry", forKey: "userFaculty")
+        case 3:
+            UserDefaults.standard.set("Faculty of Engineering", forKey: "userFaculty")
+        case 4:
+            UserDefaults.standard.set("Faculty of Law", forKey: "userFaculty")
+        case 5:
+            UserDefaults.standard.set("School of Computing", forKey: "userFaculty")
+        case 6:
+            UserDefaults.standard.set("School of Design and Environment", forKey: "userFaculty")
+        case 7:
+            UserDefaults.standard.set("Yong Loo Lin School of Medicine", forKey: "userFaculty")
+        case 8:
+            UserDefaults.standard.set("Yong Siew Toh Conservatory of Music", forKey: "userFaculty")
+        default:
+            UserDefaults.standard.set("No Faculty", forKey: "userFaculty")
+        
+        
+        }
+        
+        print(chosenActivity)
+        
+        switch (chosenActivity)
+        {
+        case 0:
+            UserDefaults.standard.set("Normal", forKey: "userActivityLevel")
+        case 1:
+            UserDefaults.standard.set("Moderate", forKey: "userActivityLevel")
+        case 2:
+            UserDefaults.standard.set("High", forKey: "userActivityLevel")
+        default:
+            UserDefaults.standard.set("Normal", forKey: "userActivityLevel")
+        }
+        
     }
+    
+    // functions to show message pop up and close it
     
     func showAnimate()
     {
@@ -151,6 +208,77 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
                 }
         });
     }
+    
+    //picker view codes
+    
+    @IBOutlet weak var facultyPicker: UIPickerView!
+    
+    @IBOutlet weak var activityPicker: UIPickerView!
+    
+    // FOR FACULTY PICKER
+    
+    // setting array that stores all the faculty names
+    var chooseFaculty = ["Faculty of Arts & Social Science", "Faculty of Business and Accountancy", "Faculty of Dentistry", "Faculty of Engineering", "Faculty of Law", "Faculty of Science", "School of Computing", "School of Design and Environment", "Yong Loo Lin School of Medicine", "Yong Siew Toh Conservatory of Music"]
+    
+    
+    //variable to store selected faculty
+    var chosenFaculty = 0
+    
+    //function to set faculty names to specific row
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        if(pickerView.tag == 1) {
+            return chooseFaculty[row]
+        }
+        else {
+            return chooseActivity[row]
+        }
+        
+    }
+    
+    //function to determine number of rows in picker view
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        if(pickerView.tag == 1) {
+            return chooseFaculty.count
+        }
+        else {
+            return chooseActivity.count
+        }
+    }
+    
+    //mandatory defining of how many components in picker view (one column)
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        
+        return 1;
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        if(pickerView.tag == 1) {
+            return chosenFaculty = row
+        }
+        else {
+            return chosenActivity = row
+        }
+    }
+    
+    // FOR ACTIVITY PICKER
+    
+    
+    //variable to store activity level
+    
+    var chooseActivity = ["normal", "moderate", "high"]
+    
+    //variable for activity level
+    
+    var chosenActivity = 0
+    
+    
+    
+    
+    
+    
     
     
     /*
