@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -132,9 +133,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         
         UserDefaults.standard.synchronize();
         
-       // close the data entry view
-        
-        self.removeAnimate()
+       
         
         //need to add code to read image and send to server side
         
@@ -155,12 +154,14 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         case 4:
             UserDefaults.standard.set("Faculty of Law", forKey: "userFaculty")
         case 5:
-            UserDefaults.standard.set("School of Computing", forKey: "userFaculty")
+            UserDefaults.standard.set("Faculty of Science", forKey: "userFaculty")
         case 6:
-            UserDefaults.standard.set("School of Design and Environment", forKey: "userFaculty")
+            UserDefaults.standard.set("School of Computing", forKey: "userFaculty")
         case 7:
-            UserDefaults.standard.set("Yong Loo Lin School of Medicine", forKey: "userFaculty")
+            UserDefaults.standard.set("School of Design and Environment", forKey: "userFaculty")
         case 8:
+            UserDefaults.standard.set("Yong Loo Lin School of Medicine", forKey: "userFaculty")
+        case 9:
             UserDefaults.standard.set("Yong Siew Toh Conservatory of Music", forKey: "userFaculty")
         default:
             UserDefaults.standard.set("No Faculty", forKey: "userFaculty")
@@ -182,6 +183,47 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
             UserDefaults.standard.set("Normal", forKey: "userActivityLevel")
         }
         
+        
+        //insert code to save to json file here!
+        
+        //setting unique user ID for user when he registers (for json file naming)
+        let userJSONuuid = UUID().uuidString
+        
+        //creating JSON object to contain user profiling
+        
+        var userProfile:JSON = [:] //create empty JSON array
+        
+        //create activity level segment in JSON array
+        userProfile["activityLevelJSON"].string = UserDefaults.standard.object(forKey: "userActivityLevel") as! String?
+        //create faculty segment in JSON array
+        userProfile["userFacultyJSON"].string = UserDefaults.standard.object(forKey: "userFaculty") as! String?
+        //create first name segment in JSON array
+        userProfile["userFirstNameJSON"].string = UserDefaults.standard.object(forKey: "userFirstName") as! String?
+        //create last name segment in JSON array
+        userProfile["userLastNameJSON"].string = UserDefaults.standard.object(forKey: "userLastName") as! String?
+        //create age segment in JSON array
+        userProfile["userAgeJSON"].string = UserDefaults.standard.object(forKey: "userAge") as! String?
+        //create UUID segment in JSON array
+        userProfile["userUUIDJSON"].string = userJSONuuid
+        
+        print("this is JSON object \(userProfile)")
+        
+        let name = userProfile["userFirstNameJSON"].stringValue
+        print("this is the name recorded in the JSON file: \(name)")
+        
+   //     let savedJSON = FileSaveHelper(fileName: userJSONuuid, fileExtension: .JSON, subDirectory: "ActivityData", directory: .documentDirectory)
+   //         do {
+ //               try savedJSON.saveFile(dataForJson: userProfile as AnyObject)
+  //          }
+  //          catch {
+//                print(error)
+ //           }
+            // print("JSON file exists: \(savedJSON.fileExists)")
+        
+        // close the data entry view
+        
+        self.removeAnimate()
+
     }
     
     // functions to show message pop up and close it
@@ -253,6 +295,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         return 1;
     }
     
+    //selected row to variable chosenActivity
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         if(pickerView.tag == 1) {

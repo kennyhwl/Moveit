@@ -84,6 +84,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       
         
         //show last stored values before sync
         var lastStepCountPercentage = UserDefaults.standard.float(forKey: "lastStoredSteps%")
@@ -121,7 +122,7 @@ class ViewController: UIViewController {
             
         { print("User logged in")
             
-            if(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234"))
+            if(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123"))
                 
             { //first launch will be false, so it will jump to else statement
                 
@@ -152,9 +153,9 @@ class ViewController: UIViewController {
                 
                 // changing key to true now to reflect subsequent (not first) launches
                 
-                UserDefaults.standard.set(true, forKey: "FirstTimeLoginA1234");
+                UserDefaults.standard.set(true, forKey: "FirstTimeLoginA1234567890123");
                 UserDefaults.standard.synchronize();
-                print(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234"));
+                print(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123"));
             }
         }
     }

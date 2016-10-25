@@ -24,6 +24,9 @@
 		341D966F1DAD297000FF37B3 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D966E1DAD297000FF37B3 /* BarChartViewController.swift */; };
 		342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CA6EC1D9FA820007EE37B /* StepsViewController.swift */; };
 		3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */; };
+		344D5C3F1DBF8E80000C4716 /* FileSaveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */; };
+		344D5C491DBF941B000C4716 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34584E081DBDC52500FD063A /* SwiftyJSON.framework */; };
+		344D5C4A1DBF941B000C4716 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34584E081DBDC52500FD063A /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		344E74F01DB49A32002667B3 /* heartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E74EF1DB49A32002667B3 /* heartRateViewController.swift */; };
 		344E74F41DB68C9C002667B3 /* Brushed Aluminium Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */; };
 		344E74F61DB8BEBD002667B3 /* BarChart2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E74F51DB8BEBD002667B3 /* BarChart2ViewController.swift */; };
@@ -77,6 +80,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
+		};
+		344D5C4B1DBF941B000C4716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34584DCD1DBDC51400FD063A /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
 		};
 		34584E071DBDC52500FD063A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -136,6 +146,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				344D5C4A1DBF941B000C4716 /* SwiftyJSON.framework in Embed Frameworks */,
 				341D966A1DAD24E400FF37B3 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -166,6 +177,7 @@
 		342A57581DAB64AC00EAC04B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/iOSChartsDemo/iOSChartsDemo/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		342CA6EC1D9FA820007EE37B /* StepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
 		3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSaveHelper.swift; sourceTree = "<group>"; };
 		344E74EF1DB49A32002667B3 /* heartRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = heartRateViewController.swift; sourceTree = "<group>"; };
 		344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Brushed Aluminium Background.jpg"; path = "../../Brushed Aluminium Background.jpg"; sourceTree = "<group>"; };
 		344E74F51DB8BEBD002667B3 /* BarChart2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChart2ViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344D5C491DBF941B000C4716 /* SwiftyJSON.framework in Frameworks */,
 				341D96691DAD24E400FF37B3 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +265,7 @@
 				342CA6EC1D9FA820007EE37B /* StepsViewController.swift */,
 				344E74EF1DB49A32002667B3 /* heartRateViewController.swift */,
 				344E74F51DB8BEBD002667B3 /* BarChart2ViewController.swift */,
+				344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */,
 			);
 			name = UserLoginandRegistration;
 			path = Moveit;
@@ -315,6 +329,7 @@
 			);
 			dependencies = (
 				341D966C1DAD24E400FF37B3 /* PBXTargetDependency */,
+				344D5C4C1DBF941B000C4716 /* PBXTargetDependency */,
 			);
 			name = Moveit;
 			productName = Moveit;
@@ -531,6 +546,7 @@
 				3414D7301D81993B00878CE8 /* ViewController.swift in Sources */,
 				344E74F61DB8BEBD002667B3 /* BarChart2ViewController.swift in Sources */,
 				3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */,
+				344D5C3F1DBF8E80000C4716 /* FileSaveHelper.swift in Sources */,
 				348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */,
 				342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */,
 				3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */,
@@ -573,6 +589,11 @@
 			isa = PBXTargetDependency;
 			name = Charts;
 			targetProxy = 341D966B1DAD24E400FF37B3 /* PBXContainerItemProxy */;
+		};
+		344D5C4C1DBF941B000C4716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 344D5C4B1DBF941B000C4716 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
