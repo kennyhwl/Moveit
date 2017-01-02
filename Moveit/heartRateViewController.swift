@@ -8,7 +8,7 @@
 
 import UIKit
 
-class heartRateViewController: UIViewController {
+class heartRateViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var img: UIImageView!
   
@@ -32,9 +32,35 @@ class heartRateViewController: UIViewController {
         
         //get values from fitbit JSON
         
-        let MPAmins = 40
+        var keyMax0 = 6
+        let keyMin0 = 0
+        var MPAmins = 0
+        
+        while keyMax0 >= keyMin0 {
+            
+            let keyword0 = String(keyMax0)
+            MPAmins += Demo.sharedInstance.userDemoData["mpa"][keyword0].int!  //all these values must be gotten from JSON files
+            keyMax0 -= 1
+            
+            
+        }
+
         var MPAunits = MPAmins
-        let VPAmins = 30
+        
+        
+        var keyMax1 = 6
+        let keyMin1 = 0
+        var VPAmins = 0
+        
+        while keyMax1 >= keyMin1 {
+            
+            let keyword0 = String(keyMax1)
+            VPAmins += Demo.sharedInstance.userDemoData["vpa"][keyword0].int!  //all these values must be gotten from JSON files
+            keyMax1 -= 1
+            
+            
+        }
+
         var VPAunits = VPAmins * 2
         
         let MVPAunits = MPAunits + VPAunits
@@ -66,7 +92,7 @@ class heartRateViewController: UIViewController {
         MAunits.text = String(MPAunits) + " units"
         VAmins.text = String(VPAmins) + " mins"
         VAunits.text = String(VPAunits) + " units"
-        recommendedLabel.text = "\(MVPAunits)/\(recommendedPA) units"
+        recommendedLabel.text = String(MVPAunits) + " completed " + "/ " + String(recommendedPA) + " recommended units"
         
         
     }
@@ -96,7 +122,7 @@ class heartRateViewController: UIViewController {
         MAunits.text = String(format: "%.0f", lastMPAunits) + " units"
         VAmins.text = String(format: "%.0f", lastVPAmins) + " mins"
         VAunits.text = String(format: "%.0f", lastVPAunits) + " units"
-        recommendedLabel.text = String(format: "%.0f", lastMVPAunits) + " completed " + "/ " + String(format: "%.0f", lastRecommendedPA) + " recommended"
+        recommendedLabel.text = String(format: "%.0f", lastMVPAunits) + " completed" + "/ " + String(format: "%.0f", lastRecommendedPA) +  " recommended units"
         
         
         //rounding images
@@ -106,6 +132,21 @@ class heartRateViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "dropdown"
+        {
+            let popoverViewController = segue.destination
+            
+            popoverViewController.popoverPresentationController?.delegate = self
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        
+        return .none
+        
+    }
     
     override func viewDidAppear(_ animated: Bool)
     {

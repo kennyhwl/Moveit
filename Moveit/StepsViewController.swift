@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class StepsViewController: UIViewController {
+class StepsViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var img3: UIImageView!
    
@@ -20,9 +21,10 @@ class StepsViewController: UIViewController {
     
     @IBAction func actionTriggered2(_ sender: AnyObject) {
         
+        
         //get values from fitbit
-        let steps = 75;
-        let recommended = 7000;
+        let steps = Demo.sharedInstance.userDemoData["step"]["0"].int!;
+        let recommended = 6500;
         //compute the ratio for the steps done
         let ratio = Float(steps)/Float(recommended);
         progressView2.progress = Float(ratio);
@@ -40,6 +42,23 @@ class StepsViewController: UIViewController {
         
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "dropdown"
+        {
+            let popoverViewController = segue.destination
+            
+            popoverViewController.popoverPresentationController?.delegate = self
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        
+        return .none
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,8 +72,8 @@ class StepsViewController: UIViewController {
         
         //rounding images
         
-        img3.layer.cornerRadius = img3.frame.size.width/2
-        img3.clipsToBounds = true
+  //      img3.layer.cornerRadius = img3.frame.size.width/2
+  //      img3.clipsToBounds = true
     
     }
     

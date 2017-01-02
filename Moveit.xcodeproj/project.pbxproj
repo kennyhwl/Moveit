@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */; };
-		341096D71D903A19001E6B8D /* DeathtoStock_NotStock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */; };
-		341096E31D915B0C001E6B8D /* upload profile pic-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 341096E21D915B0C001E6B8D /* upload profile pic-2.png */; };
 		341096E51D915E9D001E6B8D /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 341096E41D915E9D001E6B8D /* Logo.png */; };
+		34148F071DCC80E800307B14 /* upload profile pic-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 34148F061DCC80E800307B14 /* upload profile pic-3.png */; };
+		34148F0D1DCC8AC700307B14 /* DeathtoStock_NotStock-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34148F0C1DCC8AC700307B14 /* DeathtoStock_NotStock-3.jpg */; };
 		3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D72D1D81993B00878CE8 /* AppDelegate.swift */; };
 		3414D7301D81993B00878CE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414D72F1D81993B00878CE8 /* ViewController.swift */; };
 		3414D7331D81993B00878CE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3414D7311D81993B00878CE8 /* Main.storyboard */; };
@@ -22,6 +22,11 @@
 		341D96691DAD24E400FF37B3 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341D96641A54C5B700FF37B3 /* Charts.framework */; };
 		341D966A1DAD24E400FF37B3 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341D96641A54C5B700FF37B3 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341D966F1DAD297000FF37B3 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D966E1DAD297000FF37B3 /* BarChartViewController.swift */; };
+		3421879F1E18ED43007D699C /* IBAnimatable in Resources */ = {isa = PBXBuildFile; fileRef = 3421879E1E18ED43007D699C /* IBAnimatable */; };
+		342187AB1E18F256007D699C /* ImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342187AA1E18F256007D699C /* ImageEditor.swift */; };
+		342187C61E18F55D007D699C /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; };
+		342187C71E18F964007D699C /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; };
+		342187C81E18F964007D699C /* IBAnimatable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CA6EC1D9FA820007EE37B /* StepsViewController.swift */; };
 		3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */; };
 		344D5C3F1DBF8E80000C4716 /* FileSaveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */; };
@@ -30,12 +35,23 @@
 		344E74F01DB49A32002667B3 /* heartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E74EF1DB49A32002667B3 /* heartRateViewController.swift */; };
 		344E74F41DB68C9C002667B3 /* Brushed Aluminium Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */; };
 		344E74F61DB8BEBD002667B3 /* BarChart2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E74F51DB8BEBD002667B3 /* BarChart2ViewController.swift */; };
-		348A7E361D8E6BBB00E9D930 /* Elijah Hail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */; };
-		348A7E381D8E72EA00E9D930 /* Drmakete Lab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */; };
-		348A7E3A1D8E7C1400E9D930 /* LoginBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348A7E391D8E7C1400E9D930 /* LoginBG.jpg */; };
+		3469A84C1DC5C1630045862F /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3469A84B1DC5C1630045862F /* DemoData.swift */; };
+		347F2E0F1DC37EE500F952DB /* stepstaken.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E0E1DC37EE500F952DB /* stepstaken.png */; };
+		347F2E151DC37F0E00F952DB /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E141DC37F0E00F952DB /* fire.png */; };
+		347F2E171DC37F1A00F952DB /* distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E161DC37F1A00F952DB /* distance.png */; };
+		347F2E191DC37F2300F952DB /* campusactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E181DC37F2300F952DB /* campusactive.png */; };
+		347F2E1D1DC37F3A00F952DB /* commonbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E1C1DC37F3A00F952DB /* commonbg.jpg */; };
+		347F2E211DC3843800F952DB /* Death_to_stock_BMX1_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E201DC3843800F952DB /* Death_to_stock_BMX1_2.jpg */; };
+		347F2E271DC38A2000F952DB /* settings-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E261DC38A2000F952DB /* settings-3.png */; };
 		348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */; };
-		34EEA22A1D919652008007D7 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EEA2291D919652008007D7 /* 01.jpg */; };
-		34EEA22C1D919D3B008007D7 /* Jeffrey Swanson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34EEA22B1D919D3B008007D7 /* Jeffrey Swanson.jpg */; };
+		34AF1FBD1E190FC300D5F9FD /* TextFieldEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */; };
+		34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */; };
+		34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */; };
+		34FF68DF1E1A4079007C28A3 /* spatter-8-1056056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FF68DE1E1A4079007C28A3 /* spatter-8-1056056.jpg */; };
+		34FF68E11E1A4AB8007C28A3 /* login with facebook button.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF68E01E1A4AB8007C28A3 /* login with facebook button.png */; };
+		34FF68E31E1A5A64007C28A3 /* 833.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FF68E21E1A5A64007C28A3 /* 833.jpg */; };
+		34FF68E51E1A5B36007C28A3 /* shoe-prints.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF68E41E1A5B36007C28A3 /* shoe-prints.png */; };
+		34FF68E71E1A6407007C28A3 /* skipping rope.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF68E61E1A6407007C28A3 /* skipping rope.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +96,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
+		};
+		342187C21E18F549007D699C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342187B51E18F539007D699C /* IBAnimatable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE6C66FF1BFBF93500134A35;
+			remoteInfo = IBAnimatableApp;
+		};
+		342187C41E18F549007D699C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342187B51E18F539007D699C /* IBAnimatable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE6B01551C2A082300950BB2;
+			remoteInfo = IBAnimatable;
+		};
+		342187C91E18F964007D699C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342187B51E18F539007D699C /* IBAnimatable.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AE6B01541C2A082300950BB2;
+			remoteInfo = IBAnimatable;
 		};
 		344D5C4B1DBF941B000C4716 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -148,6 +185,7 @@
 			files = (
 				344D5C4A1DBF941B000C4716 /* SwiftyJSON.framework in Embed Frameworks */,
 				341D966A1DAD24E400FF37B3 /* Charts.framework in Embed Frameworks */,
+				342187C81E18F964007D699C /* IBAnimatable.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,9 +194,9 @@
 
 /* Begin PBXFileReference section */
 		341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPopUpViewController.swift; sourceTree = "<group>"; };
-		341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DeathtoStock_NotStock.jpg; sourceTree = "<group>"; };
-		341096E21D915B0C001E6B8D /* upload profile pic-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload profile pic-2.png"; sourceTree = "<group>"; };
 		341096E41D915E9D001E6B8D /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		34148F061DCC80E800307B14 /* upload profile pic-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload profile pic-3.png"; path = "../../../Downloads/upload profile pic-3.png"; sourceTree = "<group>"; };
+		34148F0C1DCC8AC700307B14 /* DeathtoStock_NotStock-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "DeathtoStock_NotStock-3.jpg"; path = "../../../Downloads/DeathtoStock_NotStock-3.jpg"; sourceTree = "<group>"; };
 		3414D72A1D81993B00878CE8 /* Moveit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moveit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3414D72D1D81993B00878CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3414D72F1D81993B00878CE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +212,9 @@
 		3414D74F1D81993B00878CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3414D75B1D81A33600878CE8 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		341D966E1DAD297000FF37B3 /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarChartViewController.swift; path = ../../../Downloads/iOSChartsDemo/iOSChartsDemo/BarChartViewController.swift; sourceTree = "<group>"; };
+		3421879E1E18ED43007D699C /* IBAnimatable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IBAnimatable; path = "../../Downloads/IBAnimatable-master/IBAnimatable"; sourceTree = "<group>"; };
+		342187AA1E18F256007D699C /* ImageEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditor.swift; sourceTree = "<group>"; };
+		342187B51E18F539007D699C /* IBAnimatable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBAnimatable.xcodeproj; path = "../../Downloads/IBAnimatable-master-2/IBAnimatable.xcodeproj"; sourceTree = "<group>"; };
 		342A57581DAB64AC00EAC04B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/iOSChartsDemo/iOSChartsDemo/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		342CA6EC1D9FA820007EE37B /* StepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
 		3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
@@ -182,12 +223,23 @@
 		344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Brushed Aluminium Background.jpg"; path = "../../Brushed Aluminium Background.jpg"; sourceTree = "<group>"; };
 		344E74F51DB8BEBD002667B3 /* BarChart2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChart2ViewController.swift; sourceTree = "<group>"; };
 		34584DCD1DBDC51400FD063A /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
-		348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Elijah Hail.jpg"; sourceTree = "<group>"; };
-		348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Drmakete Lab.jpg"; sourceTree = "<group>"; };
-		348A7E391D8E7C1400E9D930 /* LoginBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginBG.jpg; sourceTree = "<group>"; };
+		3469A84B1DC5C1630045862F /* DemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		347F2E0E1DC37EE500F952DB /* stepstaken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stepstaken.png; path = ../../../Downloads/stepstaken.png; sourceTree = "<group>"; };
+		347F2E141DC37F0E00F952DB /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = ../../../Downloads/fire.png; sourceTree = "<group>"; };
+		347F2E161DC37F1A00F952DB /* distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = distance.png; path = ../../../Downloads/distance.png; sourceTree = "<group>"; };
+		347F2E181DC37F2300F952DB /* campusactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = campusactive.png; path = ../../../Downloads/campusactive.png; sourceTree = "<group>"; };
+		347F2E1C1DC37F3A00F952DB /* commonbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = commonbg.jpg; path = ../../../Downloads/commonbg.jpg; sourceTree = "<group>"; };
+		347F2E201DC3843800F952DB /* Death_to_stock_BMX1_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Death_to_stock_BMX1_2.jpg; path = ../../../Downloads/Death_to_stock_BMX1_2.jpg; sourceTree = "<group>"; };
+		347F2E261DC38A2000F952DB /* settings-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-3.png"; path = "../../../Downloads/settings-3.png"; sourceTree = "<group>"; };
 		348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
-		34EEA2291D919652008007D7 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
-		34EEA22B1D919D3B008007D7 /* Jeffrey Swanson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jeffrey Swanson.jpg"; sourceTree = "<group>"; };
+		34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEditor.swift; sourceTree = "<group>"; };
+		34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEditor.swift; sourceTree = "<group>"; };
+		34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		34FF68DE1E1A4079007C28A3 /* spatter-8-1056056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "spatter-8-1056056.jpg"; path = "../../../Downloads/spatter-8-1056056.jpg"; sourceTree = "<group>"; };
+		34FF68E01E1A4AB8007C28A3 /* login with facebook button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login with facebook button.png"; path = "../../login with facebook button.png"; sourceTree = "<group>"; };
+		34FF68E21E1A5A64007C28A3 /* 833.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 833.jpg; path = "../../../Downloads/Hexagonal-pattern/833.jpg"; sourceTree = "<group>"; };
+		34FF68E41E1A5B36007C28A3 /* shoe-prints.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shoe-prints.png"; path = "../../../Downloads/shoe-prints.png"; sourceTree = "<group>"; };
+		34FF68E61E1A6407007C28A3 /* skipping rope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skipping rope.png"; path = "../../../Downloads/skipping rope.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,8 +247,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342187C61E18F55D007D699C /* IBAnimatable.framework in Frameworks */,
 				344D5C491DBF941B000C4716 /* SwiftyJSON.framework in Frameworks */,
 				341D96691DAD24E400FF37B3 /* Charts.framework in Frameworks */,
+				342187C71E18F964007D699C /* IBAnimatable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,15 +271,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34148EFD1DCC7EC500307B14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34FF68E61E1A6407007C28A3 /* skipping rope.png */,
+				34FF68E41E1A5B36007C28A3 /* shoe-prints.png */,
+				34FF68E21E1A5A64007C28A3 /* 833.jpg */,
+				34FF68E01E1A4AB8007C28A3 /* login with facebook button.png */,
+				34FF68DE1E1A4079007C28A3 /* spatter-8-1056056.jpg */,
+				34148F0C1DCC8AC700307B14 /* DeathtoStock_NotStock-3.jpg */,
+				344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */,
+				341096E41D915E9D001E6B8D /* Logo.png */,
+				34148F061DCC80E800307B14 /* upload profile pic-3.png */,
+				347F2E0E1DC37EE500F952DB /* stepstaken.png */,
+				347F2E141DC37F0E00F952DB /* fire.png */,
+				347F2E161DC37F1A00F952DB /* distance.png */,
+				347F2E181DC37F2300F952DB /* campusactive.png */,
+				347F2E1C1DC37F3A00F952DB /* commonbg.jpg */,
+				347F2E201DC3843800F952DB /* Death_to_stock_BMX1_2.jpg */,
+				347F2E261DC38A2000F952DB /* settings-3.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3414D7211D81993B00878CE8 = {
 			isa = PBXGroup;
 			children = (
+				34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */,
 				3414D72C1D81993B00878CE8 /* UserLoginandRegistration */,
+				342187B51E18F539007D699C /* IBAnimatable.xcodeproj */,
 				34584DCD1DBDC51400FD063A /* SwiftyJSON.xcodeproj */,
 				342A57581DAB64AC00EAC04B /* Charts.xcodeproj */,
 				3414D7411D81993B00878CE8 /* MoveitTests */,
 				3414D74C1D81993B00878CE8 /* MoveitUITests */,
 				3414D72B1D81993B00878CE8 /* Products */,
+				3421879E1E18ED43007D699C /* IBAnimatable */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,17 +324,12 @@
 			children = (
 				3414D72D1D81993B00878CE8 /* AppDelegate.swift */,
 				3414D72F1D81993B00878CE8 /* ViewController.swift */,
+				3469A84B1DC5C1630045862F /* DemoData.swift */,
 				341D966E1DAD297000FF37B3 /* BarChartViewController.swift */,
 				3414D7311D81993B00878CE8 /* Main.storyboard */,
-				348A7E351D8E6BBB00E9D930 /* Elijah Hail.jpg */,
-				34EEA22B1D919D3B008007D7 /* Jeffrey Swanson.jpg */,
-				34EEA2291D919652008007D7 /* 01.jpg */,
-				344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */,
-				348A7E371D8E72EA00E9D930 /* Drmakete Lab.jpg */,
-				341096E41D915E9D001E6B8D /* Logo.png */,
-				341096E21D915B0C001E6B8D /* upload profile pic-2.png */,
-				348A7E391D8E7C1400E9D930 /* LoginBG.jpg */,
-				341096D61D903A19001E6B8D /* DeathtoStock_NotStock.jpg */,
+				34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */,
+				342187AA1E18F256007D699C /* ImageEditor.swift */,
+				34148EFD1DCC7EC500307B14 /* Supporting Files */,
 				3414D7341D81993B00878CE8 /* Assets.xcassets */,
 				3414D7361D81993B00878CE8 /* LaunchScreen.storyboard */,
 				3414D7391D81993B00878CE8 /* Info.plist */,
@@ -266,6 +341,7 @@
 				344E74EF1DB49A32002667B3 /* heartRateViewController.swift */,
 				344E74F51DB8BEBD002667B3 /* BarChart2ViewController.swift */,
 				344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */,
+				34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */,
 			);
 			name = UserLoginandRegistration;
 			path = Moveit;
@@ -295,6 +371,15 @@
 				341D96641A54C5B700FF37B3 /* Charts.framework */,
 				341D96661A54C5B700FF37B3 /* ChartsRealm.framework */,
 				341D96681A54C5B700FF37B3 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		342187BE1E18F549007D699C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342187C31E18F549007D699C /* IBAnimatableApp.app */,
+				342187C51E18F549007D699C /* IBAnimatable.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -330,6 +415,7 @@
 			dependencies = (
 				341D966C1DAD24E400FF37B3 /* PBXTargetDependency */,
 				344D5C4C1DBF941B000C4716 /* PBXTargetDependency */,
+				342187CA1E18F964007D699C /* PBXTargetDependency */,
 			);
 			name = Moveit;
 			productName = Moveit;
@@ -415,6 +501,10 @@
 					ProjectRef = 342A57581DAB64AC00EAC04B /* Charts.xcodeproj */;
 				},
 				{
+					ProductGroup = 342187BE1E18F549007D699C /* Products */;
+					ProjectRef = 342187B51E18F539007D699C /* IBAnimatable.xcodeproj */;
+				},
+				{
 					ProductGroup = 34584DFE1DBDC52500FD063A /* Products */;
 					ProjectRef = 34584DCD1DBDC51400FD063A /* SwiftyJSON.xcodeproj */;
 				},
@@ -448,6 +538,20 @@
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
 			remoteRef = 341D96671A54C5B700FF37B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342187C31E18F549007D699C /* IBAnimatableApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = IBAnimatableApp.app;
+			remoteRef = 342187C21E18F549007D699C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342187C51E18F549007D699C /* IBAnimatable.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IBAnimatable.framework;
+			remoteRef = 342187C41E18F549007D699C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		34584E081DBDC52500FD063A /* SwiftyJSON.framework */ = {
@@ -506,17 +610,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34EEA22A1D919652008007D7 /* 01.jpg in Resources */,
+				347F2E151DC37F0E00F952DB /* fire.png in Resources */,
 				341096E51D915E9D001E6B8D /* Logo.png in Resources */,
+				347F2E271DC38A2000F952DB /* settings-3.png in Resources */,
+				34148F0D1DCC8AC700307B14 /* DeathtoStock_NotStock-3.jpg in Resources */,
+				347F2E0F1DC37EE500F952DB /* stepstaken.png in Resources */,
+				3421879F1E18ED43007D699C /* IBAnimatable in Resources */,
+				34FF68E51E1A5B36007C28A3 /* shoe-prints.png in Resources */,
+				34FF68E31E1A5A64007C28A3 /* 833.jpg in Resources */,
 				344E74F41DB68C9C002667B3 /* Brushed Aluminium Background.jpg in Resources */,
-				348A7E3A1D8E7C1400E9D930 /* LoginBG.jpg in Resources */,
+				347F2E211DC3843800F952DB /* Death_to_stock_BMX1_2.jpg in Resources */,
+				347F2E191DC37F2300F952DB /* campusactive.png in Resources */,
+				34FF68E71E1A6407007C28A3 /* skipping rope.png in Resources */,
 				3414D7381D81993B00878CE8 /* LaunchScreen.storyboard in Resources */,
-				348A7E381D8E72EA00E9D930 /* Drmakete Lab.jpg in Resources */,
-				34EEA22C1D919D3B008007D7 /* Jeffrey Swanson.jpg in Resources */,
-				348A7E361D8E6BBB00E9D930 /* Elijah Hail.jpg in Resources */,
-				341096E31D915B0C001E6B8D /* upload profile pic-2.png in Resources */,
-				341096D71D903A19001E6B8D /* DeathtoStock_NotStock.jpg in Resources */,
+				34FF68E11E1A4AB8007C28A3 /* login with facebook button.png in Resources */,
+				34148F071DCC80E800307B14 /* upload profile pic-3.png in Resources */,
+				347F2E171DC37F1A00F952DB /* distance.png in Resources */,
 				3414D7351D81993B00878CE8 /* Assets.xcassets in Resources */,
+				34FF68DF1E1A4079007C28A3 /* spatter-8-1056056.jpg in Resources */,
+				347F2E1D1DC37F3A00F952DB /* commonbg.jpg in Resources */,
 				3414D7331D81993B00878CE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +654,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3469A84C1DC5C1630045862F /* DemoData.swift in Sources */,
 				344E74F01DB49A32002667B3 /* heartRateViewController.swift in Sources */,
 				3414D7301D81993B00878CE8 /* ViewController.swift in Sources */,
 				344E74F61DB8BEBD002667B3 /* BarChart2ViewController.swift in Sources */,
@@ -549,10 +662,14 @@
 				344D5C3F1DBF8E80000C4716 /* FileSaveHelper.swift in Sources */,
 				348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */,
 				342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */,
+				342187AB1E18F256007D699C /* ImageEditor.swift in Sources */,
 				3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */,
+				34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */,
 				341D966F1DAD297000FF37B3 /* BarChartViewController.swift in Sources */,
 				341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */,
+				34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */,
 				3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */,
+				34AF1FBD1E190FC300D5F9FD /* TextFieldEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +706,11 @@
 			isa = PBXTargetDependency;
 			name = Charts;
 			targetProxy = 341D966B1DAD24E400FF37B3 /* PBXContainerItemProxy */;
+		};
+		342187CA1E18F964007D699C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBAnimatable;
+			targetProxy = 342187C91E18F964007D699C /* PBXContainerItemProxy */;
 		};
 		344D5C4C1DBF941B000C4716 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

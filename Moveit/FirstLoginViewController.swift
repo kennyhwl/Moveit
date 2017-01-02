@@ -174,11 +174,10 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         switch (chosenActivity)
         {
         case 0:
-            UserDefaults.standard.set("Normal", forKey: "userActivityLevel")
-        case 1:
             UserDefaults.standard.set("Moderate", forKey: "userActivityLevel")
-        case 2:
+        case 1:
             UserDefaults.standard.set("High", forKey: "userActivityLevel")
+        
         default:
             UserDefaults.standard.set("Normal", forKey: "userActivityLevel")
         }
@@ -266,6 +265,30 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
     //variable to store selected faculty
     var chosenFaculty = 0
     
+    //change font
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        
+        var label = view as! UILabel!
+        if label == nil {
+            label = UILabel()
+        }
+        
+        if(pickerView.tag == 1) {
+        let data = chooseFaculty[row]
+            let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 15.0, weight: UIFontWeightRegular)])
+            label?.attributedText = title
+            label?.textAlignment = .center
+            return label!
+        } else {
+            let data = chooseActivity[row]
+            let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0, weight: UIFontWeightRegular)])
+            label?.attributedText = title
+            label?.textAlignment = .center
+            return label!
+        }
+        
+    }
+    
     //function to set faculty names to specific row
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
@@ -311,7 +334,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
     
     //variable to store activity level
     
-    var chooseActivity = ["normal", "moderate", "high"]
+    var chooseActivity = ["moderate", "high"]
     
     //variable for activity level
     

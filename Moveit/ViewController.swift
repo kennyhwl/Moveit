@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SwiftyJSON
+import UserNotifications
 
-
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
 
     @IBOutlet weak var img: UIImageView!
@@ -27,8 +28,11 @@ class ViewController: UIViewController {
     @IBAction func actionTriggered(_ sender: AnyObject) {
         
         //get values from fitbit
-        let steps = 750; //get from json file
-        let recommendedSteps = 6500; //average is 6000 - 7000 for 19-59
+    
+        let steps = Demo.sharedInstance.userDemoData["step"]["0"].int!
+        
+        //get from json file
+        let recommendedSteps = 6500  //average is 6000 - 7000 for 19-49
         //display steps
         stepCount.text = "\(steps) steps";
         //compute the ratio for the steps done
@@ -54,13 +58,15 @@ class ViewController: UIViewController {
     @IBAction func activitySync(_ sender: AnyObject) {
         
         //get values from Caroline for MPA/VPA
+    
         
-        let MPAmins = 40
+        let MPAmins = Demo.sharedInstance.userDemoData["mpa"]["0"].int!
         var MPAunits = MPAmins
-        let VPAmins = 30
+        let VPAmins = Demo.sharedInstance.userDemoData["vpa"]["0"].int!
         var VPAunits = VPAmins * 2
         
         let MVPAunits = MPAunits + VPAunits
+        
         
         let recommendedPA = 150
         
@@ -78,13 +84,54 @@ class ViewController: UIViewController {
         
     }
     
+    //notification function
     
-
+    func scheduleLocal() {
+        
+        if #available(iOS 10.0, *) {
+        let center = UNUserNotificationCenter.current()
+        center.removeAllPendingNotificationRequests()
+        let content = UNMutableNotificationContent()
+        content.title = "Physical Activity Recommendation"
+        content.body = "It seems that you may need to be more active! How about a 15-minute brisk walk later?"
+        content.categoryIdentifier = "alarm"
+        content.userInfo = ["customData": "fizzbuzz"]
+        content.sound = UNNotificationSound.default()
+        
+        var dateComponents = DateComponents()
+        dateComponents.day = 7
+        dateComponents.month = 11
+        dateComponents.year = 2016
+        dateComponents.hour = 11
+        dateComponents.minute = 50
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(request)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "dropdown"
+        {
+            let popoverViewController = segue.destination
+            
+            popoverViewController.popoverPresentationController?.delegate = self
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        
+        return .none
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
+    
+        scheduleLocal()
         
         //show last stored values before sync
         var lastStepCountPercentage = UserDefaults.standard.float(forKey: "lastStoredSteps%")
@@ -102,11 +149,11 @@ class ViewController: UIViewController {
         activityPercentageLabel.text = String(format: "%.1f", lastProgressActivityPercentage) + "%"
         
         //rounding images
-        img.layer.cornerRadius = img.frame.size.width/2
-        img.clipsToBounds = true
+//        img.layer.cornerRadius = img.frame.size.width/2
+//        img.clipsToBounds = true
         
-        img2.layer.cornerRadius = img2.frame.size.width/2
-        img2.clipsToBounds = true
+//        img2.layer.cornerRadius = img2.frame.size.width/2
+//        img2.clipsToBounds = true
         
         //getting rid of pesky navigation bar thing appearing on top
        // self.edgesForExtendedLayout = UIRectEdge.None;
@@ -122,7 +169,7 @@ class ViewController: UIViewController {
             
         { print("User logged in")
             
-            if(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123"))
+            if(UserDefaults.standard.bool(forKey: "FirstTimeLoginA123456789012345678901"))
                 
             { //first launch will be false, so it will jump to else statement
                 
@@ -153,9 +200,9 @@ class ViewController: UIViewController {
                 
                 // changing key to true now to reflect subsequent (not first) launches
                 
-                UserDefaults.standard.set(true, forKey: "FirstTimeLoginA1234567890123");
+                UserDefaults.standard.set(true, forKey: "FirstTimeLoginA123456789012345678901");
                 UserDefaults.standard.synchronize();
-                print(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123"));
+                print(UserDefaults.standard.bool(forKey: "FirstTimeLoginA123456789012345678901"));
             }
         }
     }

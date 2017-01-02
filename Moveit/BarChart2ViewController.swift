@@ -10,7 +10,7 @@ import UIKit
 
 import Charts
 
-class BarChart2ViewController: UIViewController {
+class BarChart2ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     
     @IBOutlet weak var barChartView2: BarChartView!
@@ -27,29 +27,83 @@ class BarChart2ViewController: UIViewController {
     
     var days:[String] = []
     
-    var MVPAdone:[Double] = [100, 100, 200, 130, 120, 150, 40, 130, 100, 50, 20, 110]
+    var MVPAdone:[Double] = []
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "dropdown"
+        {
+            let popoverViewController = segue.destination
+            
+            popoverViewController.popoverPresentationController?.delegate = self
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        
+        return .none
+        
+    }
 
 override func viewDidLoad() {
     super.viewDidLoad()
 
     //Get activity data based on date from JSON file data storage
+    var keyMax0 = 6
+    let keyMin0 = 0
+    var dateMPAmins = 0
     
-    let dateMPAmins = 40     //all these values must be gotten from JSON files
+    while keyMax0 >= keyMin0 {
+        
+        let keyword0 = String(keyMax0)
+        dateMPAmins += Demo.sharedInstance.userDemoData["mpa"][keyword0].int!  //all these values must be gotten from JSON files
+        keyMax0 -= 1
+        
+        
+    }
+    
     let dateMPAunits = dateMPAmins
     
-    let dateVPAmins = 30
-    let dateVPAunits = dateMPAunits * 2
+    var keyMax1 = 6
+    let keyMin1 = 0
+    var dateVPAmins = 0
+    
+    while keyMax1 >= keyMin1 {
+        
+        let keyword0 = String(keyMax1)
+        dateVPAmins += Demo.sharedInstance.userDemoData["vpa"][keyword0].int!  //all these values must be gotten from JSON files
+        keyMax1 -= 1
+        
+        
+    }
+    
+    
+    let dateVPAunits = dateVPAmins * 2
     
     let dateRecommendedPA = 150
     
-    let dateMVPAunits = 100
+    let dateMVPAunits = dateMPAunits + dateVPAunits
     
     MAmins.text = "\(dateMPAmins) mins"
     MAunits.text = "\(dateMPAunits) units"
     VAmins.text = "\(dateVPAmins) mins"
     VAunits.text = "\(dateVPAunits) mins"
     
-     recommendedLabel.text = String(dateMVPAunits) + " completed " + "/ " + String(dateRecommendedPA) + " recommended"
+     recommendedLabel.text = String(dateMVPAunits) + " completed " + "/ " + String(dateRecommendedPA) + " recommended units"
+    
+    var keyMax = 6
+    let keyMin = 0
+    
+    while keyMax >= keyMin {
+        
+        let keyword = String(keyMax)
+        let value = Demo.sharedInstance.userDemoData["mpa"][keyword].int! + (2 * Demo.sharedInstance.userDemoData["vpa"][keyword].int!)
+        
+        self.MVPAdone.append(Double(value))
+        
+        keyMax -= 1
+    }
     
     
     setChart()
@@ -86,7 +140,7 @@ override func viewDidLoad() {
                     print("yVals are \(yVals)")
                 }
                 
-                let yAxis = BarChartDataSet(values: yVals, label: "Steps Taken")
+                let yAxis = BarChartDataSet(values: yVals, label: "Activity Done")
                 
                 let xAxis = BarChartData() //(xVals: xVals, dataSet: yAxis)
                 
