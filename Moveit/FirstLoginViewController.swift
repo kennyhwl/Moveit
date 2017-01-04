@@ -268,6 +268,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
     //change font
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
+        
         var label = view as! UILabel!
         if label == nil {
             label = UILabel()
@@ -275,15 +276,24 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
         
         if(pickerView.tag == 1) {
         let data = chooseFaculty[row]
-            let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 15.0, weight: UIFontWeightRegular)])
+            let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 14.0, weight: UIFontWeightRegular)])
             label?.attributedText = title
             label?.textAlignment = .center
+            label?.backgroundColor = UIColor.black
+            label?.textColor = UIColor.white
+            
+           
             return label!
         } else {
             let data = chooseActivity[row]
-            let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0, weight: UIFontWeightRegular)])
+            let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 13.5, weight: UIFontWeightRegular)])
             label?.attributedText = title
             label?.textAlignment = .center
+            label?.backgroundColor = UIColor.black
+            label?.textColor = UIColor.white
+            
+           
+//            label?.alpha = 0.5
             return label!
         }
         

@@ -169,7 +169,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             
         { print("User logged in")
             
-            if(UserDefaults.standard.bool(forKey: "FirstTimeLoginA123456789012345678901"))
+            if(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123456789012345678"))
                 
             { //first launch will be false, so it will jump to else statement
                 
@@ -200,9 +200,9 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
                 
                 // changing key to true now to reflect subsequent (not first) launches
                 
-                UserDefaults.standard.set(true, forKey: "FirstTimeLoginA123456789012345678901");
+                UserDefaults.standard.set(true, forKey: "FirstTimeLoginA1234567890123456789012345678");
                 UserDefaults.standard.synchronize();
-                print(UserDefaults.standard.bool(forKey: "FirstTimeLoginA123456789012345678901"));
+                print(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123456789012345678"));
             }
         }
     }
@@ -236,18 +236,6 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func LogoutButtonTapped(_ sender: AnyObject)
-    {
-        // set bool back to 0 (meaning logged out state)
-        
-        UserDefaults.standard.set(false, forKey:"isUserLoggedIn");
-        
-        UserDefaults.standard.synchronize();
-       
-        // re-present the login page again
-        
-         self.performSegue(withIdentifier: "loginView", sender: self);
-        
-    }
+    
 }
 

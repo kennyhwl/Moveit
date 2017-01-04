@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3407ECC91E1BEA11004E596A /* dropdownMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407ECC81E1BEA11004E596A /* dropdownMenuViewController.swift */; };
 		341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */; };
 		341096E51D915E9D001E6B8D /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 341096E41D915E9D001E6B8D /* Logo.png */; };
 		34148F071DCC80E800307B14 /* upload profile pic-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 34148F061DCC80E800307B14 /* upload profile pic-3.png */; };
@@ -47,6 +48,10 @@
 		34AF1FBD1E190FC300D5F9FD /* TextFieldEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */; };
 		34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */; };
 		34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */; };
+		34FF06411E1D021C00506390 /* blackbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF06401E1D021C00506390 /* blackbg1.png */; };
+		34FF064C1E1D022700506390 /* blackbg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF064B1E1D022700506390 /* blackbg2.png */; };
+		34FF06501E1D07F900506390 /* shoesy-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF064F1E1D07F900506390 /* shoesy-2.png */; };
+		34FF06521E1D081800506390 /* sports vectors.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF06511E1D081800506390 /* sports vectors.png */; };
 		34FF68DF1E1A4079007C28A3 /* spatter-8-1056056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FF68DE1E1A4079007C28A3 /* spatter-8-1056056.jpg */; };
 		34FF68E11E1A4AB8007C28A3 /* login with facebook button.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF68E01E1A4AB8007C28A3 /* login with facebook button.png */; };
 		34FF68E31E1A5A64007C28A3 /* 833.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FF68E21E1A5A64007C28A3 /* 833.jpg */; };
@@ -193,6 +198,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3407ECC81E1BEA11004E596A /* dropdownMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dropdownMenuViewController.swift; sourceTree = "<group>"; };
 		341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPopUpViewController.swift; sourceTree = "<group>"; };
 		341096E41D915E9D001E6B8D /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		34148F061DCC80E800307B14 /* upload profile pic-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload profile pic-3.png"; path = "../../../Downloads/upload profile pic-3.png"; sourceTree = "<group>"; };
@@ -235,6 +241,10 @@
 		34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEditor.swift; sourceTree = "<group>"; };
 		34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEditor.swift; sourceTree = "<group>"; };
 		34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		34FF06401E1D021C00506390 /* blackbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackbg1.png; path = ../../blackbg1.png; sourceTree = "<group>"; };
+		34FF064B1E1D022700506390 /* blackbg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackbg2.png; path = ../../blackbg2.png; sourceTree = "<group>"; };
+		34FF064F1E1D07F900506390 /* shoesy-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shoesy-2.png"; path = "../../../Downloads/shoesy-2.png"; sourceTree = "<group>"; };
+		34FF06511E1D081800506390 /* sports vectors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sports vectors.png"; path = "../../../Downloads/sports vectors.png"; sourceTree = "<group>"; };
 		34FF68DE1E1A4079007C28A3 /* spatter-8-1056056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "spatter-8-1056056.jpg"; path = "../../../Downloads/spatter-8-1056056.jpg"; sourceTree = "<group>"; };
 		34FF68E01E1A4AB8007C28A3 /* login with facebook button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login with facebook button.png"; path = "../../login with facebook button.png"; sourceTree = "<group>"; };
 		34FF68E21E1A5A64007C28A3 /* 833.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 833.jpg; path = "../../../Downloads/Hexagonal-pattern/833.jpg"; sourceTree = "<group>"; };
@@ -274,6 +284,10 @@
 		34148EFD1DCC7EC500307B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				34FF06511E1D081800506390 /* sports vectors.png */,
+				34FF064F1E1D07F900506390 /* shoesy-2.png */,
+				34FF064B1E1D022700506390 /* blackbg2.png */,
+				34FF06401E1D021C00506390 /* blackbg1.png */,
 				34FF68E61E1A6407007C28A3 /* skipping rope.png */,
 				34FF68E41E1A5B36007C28A3 /* shoe-prints.png */,
 				34FF68E21E1A5A64007C28A3 /* 833.jpg */,
@@ -327,6 +341,7 @@
 				3469A84B1DC5C1630045862F /* DemoData.swift */,
 				341D966E1DAD297000FF37B3 /* BarChartViewController.swift */,
 				3414D7311D81993B00878CE8 /* Main.storyboard */,
+				3407ECC81E1BEA11004E596A /* dropdownMenuViewController.swift */,
 				34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */,
 				342187AA1E18F256007D699C /* ImageEditor.swift */,
 				34148EFD1DCC7EC500307B14 /* Supporting Files */,
@@ -611,15 +626,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				347F2E151DC37F0E00F952DB /* fire.png in Resources */,
+				34FF06501E1D07F900506390 /* shoesy-2.png in Resources */,
 				341096E51D915E9D001E6B8D /* Logo.png in Resources */,
 				347F2E271DC38A2000F952DB /* settings-3.png in Resources */,
 				34148F0D1DCC8AC700307B14 /* DeathtoStock_NotStock-3.jpg in Resources */,
 				347F2E0F1DC37EE500F952DB /* stepstaken.png in Resources */,
+				34FF06521E1D081800506390 /* sports vectors.png in Resources */,
+				34FF064C1E1D022700506390 /* blackbg2.png in Resources */,
 				3421879F1E18ED43007D699C /* IBAnimatable in Resources */,
 				34FF68E51E1A5B36007C28A3 /* shoe-prints.png in Resources */,
 				34FF68E31E1A5A64007C28A3 /* 833.jpg in Resources */,
 				344E74F41DB68C9C002667B3 /* Brushed Aluminium Background.jpg in Resources */,
 				347F2E211DC3843800F952DB /* Death_to_stock_BMX1_2.jpg in Resources */,
+				34FF06411E1D021C00506390 /* blackbg1.png in Resources */,
 				347F2E191DC37F2300F952DB /* campusactive.png in Resources */,
 				34FF68E71E1A6407007C28A3 /* skipping rope.png in Resources */,
 				3414D7381D81993B00878CE8 /* LaunchScreen.storyboard in Resources */,
@@ -657,6 +676,7 @@
 				3469A84C1DC5C1630045862F /* DemoData.swift in Sources */,
 				344E74F01DB49A32002667B3 /* heartRateViewController.swift in Sources */,
 				3414D7301D81993B00878CE8 /* ViewController.swift in Sources */,
+				3407ECC91E1BEA11004E596A /* dropdownMenuViewController.swift in Sources */,
 				344E74F61DB8BEBD002667B3 /* BarChart2ViewController.swift in Sources */,
 				3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */,
 				344D5C3F1DBF8E80000C4716 /* FileSaveHelper.swift in Sources */,
