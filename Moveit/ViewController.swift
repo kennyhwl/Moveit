@@ -169,7 +169,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             
         { print("User logged in")
             
-            if(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123456789012345678"))
+            if(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123456789012345678912345678"))
                 
             { //first launch will be false, so it will jump to else statement
                 
@@ -200,9 +200,9 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
                 
                 // changing key to true now to reflect subsequent (not first) launches
                 
-                UserDefaults.standard.set(true, forKey: "FirstTimeLoginA1234567890123456789012345678");
+                UserDefaults.standard.set(true, forKey: "FirstTimeLoginA1234567890123456789012345678912345678");
                 UserDefaults.standard.synchronize();
-                print(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123456789012345678"));
+                print(UserDefaults.standard.bool(forKey: "FirstTimeLoginA1234567890123456789012345678912345678"));
             }
         }
     }

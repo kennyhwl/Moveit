@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3407ECC91E1BEA11004E596A /* dropdownMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407ECC81E1BEA11004E596A /* dropdownMenuViewController.swift */; };
+		3409F4CD1E1EB85A00E2D688 /* rope.png in Resources */ = {isa = PBXBuildFile; fileRef = 3409F4CC1E1EB85A00E2D688 /* rope.png */; };
+		340F52671E2A5ED6006DABEA /* skipping rope-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 340F52661E2A5ED6006DABEA /* skipping rope-2.png */; };
 		341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */; };
 		341096E51D915E9D001E6B8D /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 341096E41D915E9D001E6B8D /* Logo.png */; };
 		34148F071DCC80E800307B14 /* upload profile pic-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 34148F061DCC80E800307B14 /* upload profile pic-3.png */; };
@@ -28,7 +30,28 @@
 		342187C61E18F55D007D699C /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; };
 		342187C71E18F964007D699C /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; };
 		342187C81E18F964007D699C /* IBAnimatable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3422AEE61E2B7FC600DB1BDD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */; };
 		342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CA6EC1D9FA820007EE37B /* StepsViewController.swift */; };
+		34371CF81E308CCC00025DA2 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34371CF71E308CCC00025DA2 /* Mapbox.framework */; };
+		34371CF91E308CCC00025DA2 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34371CF71E308CCC00025DA2 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34371D041E308FE100025DA2 /* MapBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34371D031E308FE100025DA2 /* MapBoxViewController.swift */; };
+		344643051E1E7DD000688158 /* menubarsilver2.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643041E1E7DD000688158 /* menubarsilver2.png */; };
+		344643071E1E7EF100688158 /* menubarblack.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643061E1E7EF100688158 /* menubarblack.png */; };
+		3446430F1E1E832100688158 /* backbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446430E1E1E832100688158 /* backbutton2.png */; };
+		344643111E1E835A00688158 /* settingsbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643101E1E835A00688158 /* settingsbutton.png */; };
+		344643171E1E85C700688158 /* menubar01.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643161E1E85C700688158 /* menubar01.png */; };
+		344643191E1E863A00688158 /* menubar10medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643181E1E863A00688158 /* menubar10medium.png */; };
+		3446431B1E1E86DF00688158 /* menubar10light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446431A1E1E86DF00688158 /* menubar10light.png */; };
+		3446431D1E1E89D100688158 /* navbardark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446431C1E1E89D100688158 /* navbardark.png */; };
+		3446431F1E1E8BA700688158 /* backbuttonlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446431E1E1E8BA700688158 /* backbuttonlight.png */; };
+		344643211E1E8BD000688158 /* settingsbuttonlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643201E1E8BD000688158 /* settingsbuttonlight.png */; };
+		344643231E1E8E6400688158 /* toolbarbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643221E1E8E6400688158 /* toolbarbg.png */; };
+		344643331E1E9D0E00688158 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643321E1E9D0E00688158 /* home.png */; };
+		344643351E1E9FFB00688158 /* faculty.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643341E1E9FFB00688158 /* faculty.png */; };
+		344643371E1EA0DF00688158 /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643361E1EA0DF00688158 /* friends.png */; };
+		344643391E1EA29300688158 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643381E1EA29300688158 /* information.png */; };
+		3446433B1E1EA41000688158 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446433A1E1EA41000688158 /* profile.png */; };
+		344643411E1EAB6200688158 /* settings4.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643401E1EAB6200688158 /* settings4.png */; };
 		3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */; };
 		344D5C3F1DBF8E80000C4716 /* FileSaveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */; };
 		344D5C491DBF941B000C4716 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34584E081DBDC52500FD063A /* SwiftyJSON.framework */; };
@@ -48,6 +71,7 @@
 		34AF1FBD1E190FC300D5F9FD /* TextFieldEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */; };
 		34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */; };
 		34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */; };
+		34E523FE1E2A83D100E9AA17 /* upload profile pic-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E523FD1E2A83D100E9AA17 /* upload profile pic-4.png */; };
 		34FF06411E1D021C00506390 /* blackbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF06401E1D021C00506390 /* blackbg1.png */; };
 		34FF064C1E1D022700506390 /* blackbg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF064B1E1D022700506390 /* blackbg2.png */; };
 		34FF06501E1D07F900506390 /* shoesy-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF064F1E1D07F900506390 /* shoesy-2.png */; };
@@ -191,6 +215,7 @@
 				344D5C4A1DBF941B000C4716 /* SwiftyJSON.framework in Embed Frameworks */,
 				341D966A1DAD24E400FF37B3 /* Charts.framework in Embed Frameworks */,
 				342187C81E18F964007D699C /* IBAnimatable.framework in Embed Frameworks */,
+				34371CF91E308CCC00025DA2 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +224,8 @@
 
 /* Begin PBXFileReference section */
 		3407ECC81E1BEA11004E596A /* dropdownMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dropdownMenuViewController.swift; sourceTree = "<group>"; };
+		3409F4CC1E1EB85A00E2D688 /* rope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rope.png; path = ../../rope.png; sourceTree = "<group>"; };
+		340F52661E2A5ED6006DABEA /* skipping rope-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skipping rope-2.png"; path = "../../skipping rope-2.png"; sourceTree = "<group>"; };
 		341096D21D8FF587001E6B8D /* IntroPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPopUpViewController.swift; sourceTree = "<group>"; };
 		341096E41D915E9D001E6B8D /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		34148F061DCC80E800307B14 /* upload profile pic-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload profile pic-3.png"; path = "../../../Downloads/upload profile pic-3.png"; sourceTree = "<group>"; };
@@ -221,8 +248,28 @@
 		3421879E1E18ED43007D699C /* IBAnimatable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IBAnimatable; path = "../../Downloads/IBAnimatable-master/IBAnimatable"; sourceTree = "<group>"; };
 		342187AA1E18F256007D699C /* ImageEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditor.swift; sourceTree = "<group>"; };
 		342187B51E18F539007D699C /* IBAnimatable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBAnimatable.xcodeproj; path = "../../Downloads/IBAnimatable-master-2/IBAnimatable.xcodeproj"; sourceTree = "<group>"; };
+		3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		342A57581DAB64AC00EAC04B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/iOSChartsDemo/iOSChartsDemo/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		342CA6EC1D9FA820007EE37B /* StepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
+		34371CF71E308CCC00025DA2 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		34371D031E308FE100025DA2 /* MapBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxViewController.swift; sourceTree = "<group>"; };
+		344643041E1E7DD000688158 /* menubarsilver2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubarsilver2.png; path = "../../../Downloads/Nav Bars/nice/Assets/Gray/menubarsilver2.png"; sourceTree = "<group>"; };
+		344643061E1E7EF100688158 /* menubarblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubarblack.png; path = "../../../Downloads/Nav Bars/nice/Assets/Black/menubarblack.png"; sourceTree = "<group>"; };
+		3446430E1E1E832100688158 /* backbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backbutton2.png; path = "../../../Downloads/Nav Bars/vnice/Assets/Dark/backbutton2.png"; sourceTree = "<group>"; };
+		344643101E1E835A00688158 /* settingsbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsbutton.png; path = "../../../Downloads/Nav Bars/vnice/Assets/Dark/settingsbutton.png"; sourceTree = "<group>"; };
+		344643161E1E85C700688158 /* menubar01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubar01.png; path = "../../../Downloads/Nav Bars/01/Assets/Dark/menubar01.png"; sourceTree = "<group>"; };
+		344643181E1E863A00688158 /* menubar10medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubar10medium.png; path = "../../../Downloads/Nav Bars/vnice/Assets/Medium/menubar10medium.png"; sourceTree = "<group>"; };
+		3446431A1E1E86DF00688158 /* menubar10light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menubar10light.png; path = "../../../Downloads/Nav Bars/vnice/Assets/Light/menubar10light.png"; sourceTree = "<group>"; };
+		3446431C1E1E89D100688158 /* navbardark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navbardark.png; path = ../../navbardark.png; sourceTree = "<group>"; };
+		3446431E1E1E8BA700688158 /* backbuttonlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backbuttonlight.png; path = "../../../Downloads/Nav Bars/vnice/Assets/Light/backbuttonlight.png"; sourceTree = "<group>"; };
+		344643201E1E8BD000688158 /* settingsbuttonlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsbuttonlight.png; path = "../../../Downloads/Nav Bars/vnice/Assets/Light/settingsbuttonlight.png"; sourceTree = "<group>"; };
+		344643221E1E8E6400688158 /* toolbarbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toolbarbg.png; path = ../../toolbarbg.png; sourceTree = "<group>"; };
+		344643321E1E9D0E00688158 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../Downloads/home.png; sourceTree = "<group>"; };
+		344643341E1E9FFB00688158 /* faculty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = faculty.png; path = ../../../Downloads/faculty.png; sourceTree = "<group>"; };
+		344643361E1EA0DF00688158 /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = friends.png; path = ../../../Downloads/friends.png; sourceTree = "<group>"; };
+		344643381E1EA29300688158 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = information.png; path = ../../../Downloads/information.png; sourceTree = "<group>"; };
+		3446433A1E1EA41000688158 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = ../../../Downloads/profile.png; sourceTree = "<group>"; };
+		344643401E1EAB6200688158 /* settings4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings4.png; path = ../../../Downloads/settings4.png; sourceTree = "<group>"; };
 		3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSaveHelper.swift; sourceTree = "<group>"; };
 		344E74EF1DB49A32002667B3 /* heartRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = heartRateViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +288,7 @@
 		34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEditor.swift; sourceTree = "<group>"; };
 		34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEditor.swift; sourceTree = "<group>"; };
 		34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		34E523FD1E2A83D100E9AA17 /* upload profile pic-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload profile pic-4.png"; path = "../../../Downloads/upload profile pic-4.png"; sourceTree = "<group>"; };
 		34FF06401E1D021C00506390 /* blackbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackbg1.png; path = ../../blackbg1.png; sourceTree = "<group>"; };
 		34FF064B1E1D022700506390 /* blackbg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackbg2.png; path = ../../blackbg2.png; sourceTree = "<group>"; };
 		34FF064F1E1D07F900506390 /* shoesy-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "shoesy-2.png"; path = "../../../Downloads/shoesy-2.png"; sourceTree = "<group>"; };
@@ -261,6 +309,7 @@
 				344D5C491DBF941B000C4716 /* SwiftyJSON.framework in Frameworks */,
 				341D96691DAD24E400FF37B3 /* Charts.framework in Frameworks */,
 				342187C71E18F964007D699C /* IBAnimatable.framework in Frameworks */,
+				34371CF81E308CCC00025DA2 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +333,30 @@
 		34148EFD1DCC7EC500307B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				340F52661E2A5ED6006DABEA /* skipping rope-2.png */,
+				34E523FD1E2A83D100E9AA17 /* upload profile pic-4.png */,
+				344643401E1EAB6200688158 /* settings4.png */,
+				3446433A1E1EA41000688158 /* profile.png */,
+				344643381E1EA29300688158 /* information.png */,
+				344643361E1EA0DF00688158 /* friends.png */,
+				344643341E1E9FFB00688158 /* faculty.png */,
+				344643321E1E9D0E00688158 /* home.png */,
+				344643221E1E8E6400688158 /* toolbarbg.png */,
+				344643201E1E8BD000688158 /* settingsbuttonlight.png */,
+				3446431E1E1E8BA700688158 /* backbuttonlight.png */,
+				3446431C1E1E89D100688158 /* navbardark.png */,
+				3446431A1E1E86DF00688158 /* menubar10light.png */,
+				344643181E1E863A00688158 /* menubar10medium.png */,
+				344643101E1E835A00688158 /* settingsbutton.png */,
+				344643161E1E85C700688158 /* menubar01.png */,
+				3446430E1E1E832100688158 /* backbutton2.png */,
+				344643061E1E7EF100688158 /* menubarblack.png */,
+				344643041E1E7DD000688158 /* menubarsilver2.png */,
 				34FF06511E1D081800506390 /* sports vectors.png */,
 				34FF064F1E1D07F900506390 /* shoesy-2.png */,
 				34FF064B1E1D022700506390 /* blackbg2.png */,
 				34FF06401E1D021C00506390 /* blackbg1.png */,
+				3409F4CC1E1EB85A00E2D688 /* rope.png */,
 				34FF68E61E1A6407007C28A3 /* skipping rope.png */,
 				34FF68E41E1A5B36007C28A3 /* shoe-prints.png */,
 				34FF68E21E1A5A64007C28A3 /* 833.jpg */,
@@ -311,6 +380,7 @@
 		3414D7211D81993B00878CE8 = {
 			isa = PBXGroup;
 			children = (
+				34371CF71E308CCC00025DA2 /* Mapbox.framework */,
 				34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */,
 				3414D72C1D81993B00878CE8 /* UserLoginandRegistration */,
 				342187B51E18F539007D699C /* IBAnimatable.xcodeproj */,
@@ -341,6 +411,8 @@
 				3469A84B1DC5C1630045862F /* DemoData.swift */,
 				341D966E1DAD297000FF37B3 /* BarChartViewController.swift */,
 				3414D7311D81993B00878CE8 /* Main.storyboard */,
+				34371D031E308FE100025DA2 /* MapBoxViewController.swift */,
+				3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */,
 				3407ECC81E1BEA11004E596A /* dropdownMenuViewController.swift */,
 				34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */,
 				342187AA1E18F256007D699C /* ImageEditor.swift */,
@@ -628,26 +700,46 @@
 				347F2E151DC37F0E00F952DB /* fire.png in Resources */,
 				34FF06501E1D07F900506390 /* shoesy-2.png in Resources */,
 				341096E51D915E9D001E6B8D /* Logo.png in Resources */,
+				344643371E1EA0DF00688158 /* friends.png in Resources */,
 				347F2E271DC38A2000F952DB /* settings-3.png in Resources */,
+				344643191E1E863A00688158 /* menubar10medium.png in Resources */,
+				344643211E1E8BD000688158 /* settingsbuttonlight.png in Resources */,
 				34148F0D1DCC8AC700307B14 /* DeathtoStock_NotStock-3.jpg in Resources */,
+				340F52671E2A5ED6006DABEA /* skipping rope-2.png in Resources */,
 				347F2E0F1DC37EE500F952DB /* stepstaken.png in Resources */,
 				34FF06521E1D081800506390 /* sports vectors.png in Resources */,
 				34FF064C1E1D022700506390 /* blackbg2.png in Resources */,
 				3421879F1E18ED43007D699C /* IBAnimatable in Resources */,
 				34FF68E51E1A5B36007C28A3 /* shoe-prints.png in Resources */,
+				344643111E1E835A00688158 /* settingsbutton.png in Resources */,
+				3446431F1E1E8BA700688158 /* backbuttonlight.png in Resources */,
+				344643171E1E85C700688158 /* menubar01.png in Resources */,
 				34FF68E31E1A5A64007C28A3 /* 833.jpg in Resources */,
+				3446431B1E1E86DF00688158 /* menubar10light.png in Resources */,
 				344E74F41DB68C9C002667B3 /* Brushed Aluminium Background.jpg in Resources */,
 				347F2E211DC3843800F952DB /* Death_to_stock_BMX1_2.jpg in Resources */,
 				34FF06411E1D021C00506390 /* blackbg1.png in Resources */,
+				344643331E1E9D0E00688158 /* home.png in Resources */,
 				347F2E191DC37F2300F952DB /* campusactive.png in Resources */,
+				3446433B1E1EA41000688158 /* profile.png in Resources */,
 				34FF68E71E1A6407007C28A3 /* skipping rope.png in Resources */,
+				344643391E1EA29300688158 /* information.png in Resources */,
+				3446430F1E1E832100688158 /* backbutton2.png in Resources */,
 				3414D7381D81993B00878CE8 /* LaunchScreen.storyboard in Resources */,
+				344643231E1E8E6400688158 /* toolbarbg.png in Resources */,
+				3409F4CD1E1EB85A00E2D688 /* rope.png in Resources */,
 				34FF68E11E1A4AB8007C28A3 /* login with facebook button.png in Resources */,
+				344643351E1E9FFB00688158 /* faculty.png in Resources */,
 				34148F071DCC80E800307B14 /* upload profile pic-3.png in Resources */,
+				34E523FE1E2A83D100E9AA17 /* upload profile pic-4.png in Resources */,
+				344643411E1EAB6200688158 /* settings4.png in Resources */,
 				347F2E171DC37F1A00F952DB /* distance.png in Resources */,
 				3414D7351D81993B00878CE8 /* Assets.xcassets in Resources */,
+				3446431D1E1E89D100688158 /* navbardark.png in Resources */,
 				34FF68DF1E1A4079007C28A3 /* spatter-8-1056056.jpg in Resources */,
 				347F2E1D1DC37F3A00F952DB /* commonbg.jpg in Resources */,
+				344643071E1E7EF100688158 /* menubarblack.png in Resources */,
+				344643051E1E7DD000688158 /* menubarsilver2.png in Resources */,
 				3414D7331D81993B00878CE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +778,8 @@
 				3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */,
 				34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */,
 				341D966F1DAD297000FF37B3 /* BarChartViewController.swift in Sources */,
+				3422AEE61E2B7FC600DB1BDD /* MapViewController.swift in Sources */,
+				34371D041E308FE100025DA2 /* MapBoxViewController.swift in Sources */,
 				341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */,
 				34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */,
 				3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */,
@@ -852,6 +946,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Moveit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.Moveit;
@@ -865,6 +963,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Moveit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.Moveit;

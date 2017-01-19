@@ -127,8 +127,8 @@ class heartRateViewController: UIViewController, UIPopoverPresentationController
         
         //rounding images
         
-        img.layer.cornerRadius = img.frame.size.width/2
-        img.clipsToBounds = true
+  //      img.layer.cornerRadius = img.frame.size.width/2
+   //     img.clipsToBounds = true
         
     }
     

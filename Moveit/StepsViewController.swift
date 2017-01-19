@@ -62,6 +62,7 @@ class StepsViewController: UIViewController, UIPopoverPresentationControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         //show last stored values before sync
         let lastProgress = UserDefaults.standard.float(forKey: "lastStored%")
         progressView2.progress = lastProgress;
@@ -81,7 +82,9 @@ class StepsViewController: UIViewController, UIPopoverPresentationControllerDele
     override func viewDidAppear(_ animated: Bool)
     {
         
+
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

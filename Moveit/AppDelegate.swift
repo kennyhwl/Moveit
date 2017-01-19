@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         print("hahaha")
+        // For Notifications to be sent!
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
             center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
@@ -32,6 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Fallback on earlier versions
         }
         
+        // Change UINavigation Bar Settings (such as colour and tint)
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 240 , green: 248, blue: 255, alpha: 1)
         
         return true
     }
