@@ -1,0 +1,6 @@
+framework module Pods_MoveitTests {
+  umbrella header "Pods-MoveitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

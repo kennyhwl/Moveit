@@ -8,6 +8,8 @@
 
 import UIKit
 import UserNotifications
+import Alamofire
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -1335,7 +1335,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="zoomLevel">
                                         <real key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/light-v9"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
