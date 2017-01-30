@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoieGt1ZG9zIiwiYSI6ImNpeTN5bG5kMzAwMWMyd3BmcTFqNHM5ejAifQ.3DI4sUT5zKKR5DzX9MyB4w</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>For Location-based Services</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -22,15 +18,30 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.900903432523-npfrsthhre2lp35gaft71qj8lq0ocurh</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoieGt1ZG9zIiwiYSI6ImNpeTN5bG5kMzAwMWMyd3BmcTFqNHM5ejAifQ.3DI4sUT5zKKR5DzX9MyB4w</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>For Location-based Services</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Used to upload profile picture</string>
 	<key>UILaunchStoryboardName</key>

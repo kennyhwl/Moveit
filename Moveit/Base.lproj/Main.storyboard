@@ -232,7 +232,7 @@
                                     <action selector="closePopUpView:" destination="25F-z6-XZG" eventType="touchUpInside" id="aul-41-g8J"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" first name" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-DP-8fJ" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" first name" borderStyle="line" placeholder="first name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-DP-8fJ" customClass="AnimatableTextField" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="61" minY="246" width="122" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -254,7 +254,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" last name" borderStyle="line" placeholder="last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9K-jf-Pry" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" last name" borderStyle="line" placeholder="last name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9K-jf-Pry" customClass="AnimatableTextField" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="191" minY="246" width="122" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -276,7 +276,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" age" borderStyle="line" placeholder="age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G48-0W-l5U" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" age" borderStyle="line" placeholder="age" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G48-0W-l5U" customClass="AnimatableTextField" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="61" minY="284" width="252" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -722,6 +722,9 @@
                                 <frame key="frameInset" minX="176.5" minY="628" width="23" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="friends.png"/>
+                                <connections>
+                                    <segue destination="gUa-0O-584" kind="presentation" id="GqM-Wk-5fO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWW-dJ-mZa" customClass="AnimatableButton" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="251.5" minY="628" width="23" height="23"/>
@@ -1326,15 +1329,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="latitude">
-                                        <real key="value" value="45.522449999999999"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="longitude">
-                                        <real key="value" value="-122.67773"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="zoomLevel">
-                                        <real key="value" value="14"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -1342,11 +1337,113 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Ow0-6q-3vY" id="nlA-sT-YMC"/>
+                        <segue destination="sMg-iV-vRc" kind="presentation" identifier="goldSegue" id="rdJ-hZ-AlU"/>
+                        <segue destination="X1t-Of-oYl" kind="presentation" identifier="silverSegue" id="CxG-Bq-AJS"/>
+                        <segue destination="eop-se-w7q" kind="presentation" identifier="bronzeSegue" id="tLt-IL-NCi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dX2-BN-ml1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1496.8" y="1930.8845577211396"/>
+        </scene>
+        <!--Map Box2 View Controller-->
+        <scene sceneID="EMd-e6-mvP">
+            <objects>
+                <viewController id="gUa-0O-584" customClass="MapBox2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2eI-ji-DuE"/>
+                        <viewControllerLayoutGuide type="bottom" id="gmE-C0-Jt7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rVz-Kt-aUy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSb-io-pQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="1929"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H4c-3w-WXH">
+            <objects>
+                <viewController id="sMg-iV-vRc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zbz-n7-Cjh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ghc-VH-OrU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u2k-81-RPW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gold Treasure Acquired!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAA-P3-DfM">
+                                <frame key="frameInset" minX="60" minY="265" width="255" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBZ-Mh-B6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3048.8000000000002" y="1928.1859070464768"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cMm-E5-zTK">
+            <objects>
+                <viewController id="X1t-Of-oYl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Ck-Da-LtH"/>
+                        <viewControllerLayoutGuide type="bottom" id="guH-vm-3Pz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JlZ-N5-9v6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Silver Treasure Acquired!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OU-A1-Wcx">
+                                <frame key="frameInset" minX="55" minY="294" width="265" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QgX-t8-2Z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2297" y="2766"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BbX-kp-MQb">
+            <objects>
+                <viewController id="eop-se-w7q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wjJ-Ux-L2g"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lr6-th-TGB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RSF-3u-J8g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bronze Treasure Acquired!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uid-F3-Zz5">
+                                <frame key="frameInset" minX="48" minY="294" width="279" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1j-6s-xfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3049" y="2766"/>
         </scene>
         <!--Bar Chart View Controller-->
         <scene sceneID="c2C-Uy-ujr">
@@ -2815,7 +2912,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" email" borderStyle="line" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="RKJ-8T-zJe" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" email" borderStyle="line" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="RKJ-8T-zJe" customClass="AnimatableTextField" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="33" minY="248" width="307" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2840,7 +2937,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" password" borderStyle="line" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="S7z-Zj-1z2" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" password" borderStyle="line" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="S7z-Zj-1z2" customClass="AnimatableTextField" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="33" minY="284" width="307" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3036,7 +3133,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" password" borderStyle="line" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-M7-Zaq" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" password" borderStyle="line" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-M7-Zaq" customClass="AnimatableTextField" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="32" minY="299" width="307" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3058,7 +3155,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="Bottom"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" repeat password" borderStyle="line" placeholder="repeat password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mX4-KL-6Kc" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" repeat password" borderStyle="line" placeholder="repeat password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mX4-KL-6Kc" customClass="AnimatableTextField" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="32" minY="334" width="307" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3105,7 +3202,7 @@
                                     <action selector="registerButtonTapped:" destination="9If-Ft-z1v" eventType="touchUpInside" id="toL-f4-TKP"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" email" borderStyle="line" placeholder="email" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8Gh-0P-DsY" customClass="AnimatableTextField" customModule="IBAnimatable">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" email" borderStyle="line" placeholder="email" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8Gh-0P-DsY" customClass="AnimatableTextField" customModule="IBAnimatable">
                                 <frame key="frameInset" minX="32" minY="264" width="307" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3207,11 +3304,11 @@
         <image name="upload profile pic-4.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JLk-WT-C77"/>
-        <segue reference="cKN-r9-5js"/>
-        <segue reference="mof-Gw-X29"/>
+        <segue reference="2gU-M7-1M4"/>
         <segue reference="Tnk-4n-9di"/>
-        <segue reference="C3w-iD-hVE"/>
+        <segue reference="cKN-r9-5js"/>
         <segue reference="KbR-Jp-uRB"/>
+        <segue reference="C3w-iD-hVE"/>
+        <segue reference="JLk-WT-C77"/>
     </inferredMetricsTieBreakers>
 </document>

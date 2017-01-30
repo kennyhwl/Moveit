@@ -31,6 +31,9 @@
 		342187C71E18F964007D699C /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; };
 		342187C81E18F964007D699C /* IBAnimatable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3422AEE61E2B7FC600DB1BDD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */; };
+		342C135F1E38550E003359A9 /* pisavector.png in Resources */ = {isa = PBXBuildFile; fileRef = 342C135E1E38550E003359A9 /* pisavector.png */; };
+		342C13661E385A04003359A9 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 342C13651E385A03003359A9 /* box.png */; };
+		342C13681E3F749C003359A9 /* box2.png in Resources */ = {isa = PBXBuildFile; fileRef = 342C13671E3F749C003359A9 /* box2.png */; };
 		342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CA6EC1D9FA820007EE37B /* StepsViewController.swift */; };
 		34371CF81E308CCC00025DA2 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34371CF71E308CCC00025DA2 /* Mapbox.framework */; };
 		34371CF91E308CCC00025DA2 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34371CF71E308CCC00025DA2 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -53,6 +56,9 @@
 		3446433B1E1EA41000688158 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446433A1E1EA41000688158 /* profile.png */; };
 		344643411E1EAB6200688158 /* settings4.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643401E1EAB6200688158 /* settings4.png */; };
 		3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */; };
+		344D4C9A1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */; };
+		344D4C9B1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */; };
+		344D4C9C1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */; };
 		344D5C3F1DBF8E80000C4716 /* FileSaveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */; };
 		344D5C491DBF941B000C4716 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34584E081DBDC52500FD063A /* SwiftyJSON.framework */; };
 		344D5C4A1DBF941B000C4716 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34584E081DBDC52500FD063A /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -65,12 +71,12 @@
 		347F2E171DC37F1A00F952DB /* distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E161DC37F1A00F952DB /* distance.png */; };
 		347F2E191DC37F2300F952DB /* campusactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E181DC37F2300F952DB /* campusactive.png */; };
 		347F2E1D1DC37F3A00F952DB /* commonbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E1C1DC37F3A00F952DB /* commonbg.jpg */; };
-		347F2E211DC3843800F952DB /* Death_to_stock_BMX1_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E201DC3843800F952DB /* Death_to_stock_BMX1_2.jpg */; };
 		347F2E271DC38A2000F952DB /* settings-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E261DC38A2000F952DB /* settings-3.png */; };
 		348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */; };
 		34AF1FBD1E190FC300D5F9FD /* TextFieldEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */; };
 		34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */; };
 		34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */; };
+		34D338E71E38413F00E8AC4C /* MapBox2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D338E61E38413F00E8AC4C /* MapBox2ViewController.swift */; };
 		34E523FE1E2A83D100E9AA17 /* upload profile pic-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 34E523FD1E2A83D100E9AA17 /* upload profile pic-4.png */; };
 		34FF06411E1D021C00506390 /* blackbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF06401E1D021C00506390 /* blackbg1.png */; };
 		34FF064C1E1D022700506390 /* blackbg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FF064B1E1D022700506390 /* blackbg2.png */; };
@@ -257,6 +263,9 @@
 		342187B51E18F539007D699C /* IBAnimatable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBAnimatable.xcodeproj; path = "../../Downloads/IBAnimatable-master-2/IBAnimatable.xcodeproj"; sourceTree = "<group>"; };
 		3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		342A57581DAB64AC00EAC04B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/iOSChartsDemo/iOSChartsDemo/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		342C135E1E38550E003359A9 /* pisavector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pisavector.png; sourceTree = "<group>"; };
+		342C13651E385A03003359A9 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		342C13671E3F749C003359A9 /* box2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box2.png; sourceTree = "<group>"; };
 		342CA6EC1D9FA820007EE37B /* StepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
 		34371CF71E308CCC00025DA2 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		34371D031E308FE100025DA2 /* MapBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +287,10 @@
 		3446433A1E1EA41000688158 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = ../../../Downloads/profile.png; sourceTree = "<group>"; };
 		344643401E1EAB6200688158 /* settings4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings4.png; path = ../../../Downloads/settings4.png; sourceTree = "<group>"; };
 		3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		344D4C9D1E30C4DA00BF5C86 /* Moveit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moveit-Bridging-Header.h"; sourceTree = "<group>"; };
+		344D4C9E1E30C4DA00BF5C86 /* MoveitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoveitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		344D4C9F1E30C4DB00BF5C86 /* MoveitUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoveitUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		344D5C3E1DBF8E80000C4716 /* FileSaveHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSaveHelper.swift; sourceTree = "<group>"; };
 		344E74EF1DB49A32002667B3 /* heartRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = heartRateViewController.swift; sourceTree = "<group>"; };
 		344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Brushed Aluminium Background.jpg"; path = "../../Brushed Aluminium Background.jpg"; sourceTree = "<group>"; };
@@ -289,12 +302,12 @@
 		347F2E161DC37F1A00F952DB /* distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = distance.png; path = ../../../Downloads/distance.png; sourceTree = "<group>"; };
 		347F2E181DC37F2300F952DB /* campusactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = campusactive.png; path = ../../../Downloads/campusactive.png; sourceTree = "<group>"; };
 		347F2E1C1DC37F3A00F952DB /* commonbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = commonbg.jpg; path = ../../../Downloads/commonbg.jpg; sourceTree = "<group>"; };
-		347F2E201DC3843800F952DB /* Death_to_stock_BMX1_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Death_to_stock_BMX1_2.jpg; path = ../../../Downloads/Death_to_stock_BMX1_2.jpg; sourceTree = "<group>"; };
 		347F2E261DC38A2000F952DB /* settings-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-3.png"; path = "../../../Downloads/settings-3.png"; sourceTree = "<group>"; };
 		348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
 		34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEditor.swift; sourceTree = "<group>"; };
 		34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEditor.swift; sourceTree = "<group>"; };
 		34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		34D338E61E38413F00E8AC4C /* MapBox2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBox2ViewController.swift; sourceTree = "<group>"; };
 		34E523FD1E2A83D100E9AA17 /* upload profile pic-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload profile pic-4.png"; path = "../../../Downloads/upload profile pic-4.png"; sourceTree = "<group>"; };
 		34FF06401E1D021C00506390 /* blackbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackbg1.png; path = ../../blackbg1.png; sourceTree = "<group>"; };
 		34FF064B1E1D022700506390 /* blackbg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackbg2.png; path = ../../blackbg2.png; sourceTree = "<group>"; };
@@ -358,8 +371,11 @@
 		34148EFD1DCC7EC500307B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				342C13651E385A03003359A9 /* box.png */,
+				342C13671E3F749C003359A9 /* box2.png */,
 				340F52661E2A5ED6006DABEA /* skipping rope-2.png */,
 				34E523FD1E2A83D100E9AA17 /* upload profile pic-4.png */,
+				342C135E1E38550E003359A9 /* pisavector.png */,
 				344643401E1EAB6200688158 /* settings4.png */,
 				3446433A1E1EA41000688158 /* profile.png */,
 				344643381E1EA29300688158 /* information.png */,
@@ -396,7 +412,6 @@
 				347F2E161DC37F1A00F952DB /* distance.png */,
 				347F2E181DC37F2300F952DB /* campusactive.png */,
 				347F2E1C1DC37F3A00F952DB /* commonbg.jpg */,
-				347F2E201DC3843800F952DB /* Death_to_stock_BMX1_2.jpg */,
 				347F2E261DC38A2000F952DB /* settings-3.png */,
 			);
 			name = "Supporting Files";
@@ -405,6 +420,7 @@
 		3414D7211D81993B00878CE8 = {
 			isa = PBXGroup;
 			children = (
+				344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */,
 				34371CF71E308CCC00025DA2 /* Mapbox.framework */,
 				34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */,
 				3414D72C1D81993B00878CE8 /* UserLoginandRegistration */,
@@ -417,6 +433,9 @@
 				3421879E1E18ED43007D699C /* IBAnimatable */,
 				736A92B815F7E14A006604BD /* Pods */,
 				156501FBB67FBEBFAFD1DD2E /* Frameworks */,
+				344D4C9D1E30C4DA00BF5C86 /* Moveit-Bridging-Header.h */,
+				344D4C9E1E30C4DA00BF5C86 /* MoveitTests-Bridging-Header.h */,
+				344D4C9F1E30C4DB00BF5C86 /* MoveitUITests-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -441,6 +460,7 @@
 				34371D031E308FE100025DA2 /* MapBoxViewController.swift */,
 				3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */,
 				3407ECC81E1BEA11004E596A /* dropdownMenuViewController.swift */,
+				34D338E61E38413F00E8AC4C /* MapBox2ViewController.swift */,
 				34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */,
 				342187AA1E18F256007D699C /* ImageEditor.swift */,
 				34148EFD1DCC7EC500307B14 /* Supporting Files */,
@@ -754,6 +774,7 @@
 			files = (
 				347F2E151DC37F0E00F952DB /* fire.png in Resources */,
 				34FF06501E1D07F900506390 /* shoesy-2.png in Resources */,
+				344D4C9A1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */,
 				341096E51D915E9D001E6B8D /* Logo.png in Resources */,
 				344643371E1EA0DF00688158 /* friends.png in Resources */,
 				347F2E271DC38A2000F952DB /* settings-3.png in Resources */,
@@ -764,6 +785,7 @@
 				347F2E0F1DC37EE500F952DB /* stepstaken.png in Resources */,
 				34FF06521E1D081800506390 /* sports vectors.png in Resources */,
 				34FF064C1E1D022700506390 /* blackbg2.png in Resources */,
+				342C135F1E38550E003359A9 /* pisavector.png in Resources */,
 				3421879F1E18ED43007D699C /* IBAnimatable in Resources */,
 				34FF68E51E1A5B36007C28A3 /* shoe-prints.png in Resources */,
 				344643111E1E835A00688158 /* settingsbutton.png in Resources */,
@@ -772,14 +794,15 @@
 				34FF68E31E1A5A64007C28A3 /* 833.jpg in Resources */,
 				3446431B1E1E86DF00688158 /* menubar10light.png in Resources */,
 				344E74F41DB68C9C002667B3 /* Brushed Aluminium Background.jpg in Resources */,
-				347F2E211DC3843800F952DB /* Death_to_stock_BMX1_2.jpg in Resources */,
 				34FF06411E1D021C00506390 /* blackbg1.png in Resources */,
 				344643331E1E9D0E00688158 /* home.png in Resources */,
 				347F2E191DC37F2300F952DB /* campusactive.png in Resources */,
 				3446433B1E1EA41000688158 /* profile.png in Resources */,
 				34FF68E71E1A6407007C28A3 /* skipping rope.png in Resources */,
 				344643391E1EA29300688158 /* information.png in Resources */,
+				342C13681E3F749C003359A9 /* box2.png in Resources */,
 				3446430F1E1E832100688158 /* backbutton2.png in Resources */,
+				342C13661E385A04003359A9 /* box.png in Resources */,
 				3414D7381D81993B00878CE8 /* LaunchScreen.storyboard in Resources */,
 				344643231E1E8E6400688158 /* toolbarbg.png in Resources */,
 				3409F4CD1E1EB85A00E2D688 /* rope.png in Resources */,
@@ -803,6 +826,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344D4C9B1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,6 +834,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344D4C9C1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -972,6 +997,7 @@
 				34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */,
 				341D966F1DAD297000FF37B3 /* BarChartViewController.swift in Sources */,
 				3422AEE61E2B7FC600DB1BDD /* MapViewController.swift in Sources */,
+				34D338E71E38413F00E8AC4C /* MapBox2ViewController.swift in Sources */,
 				34371D041E308FE100025DA2 /* MapBoxViewController.swift in Sources */,
 				341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */,
 				34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */,
@@ -1140,6 +1166,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E2MQCT9PJM;
@@ -1151,6 +1178,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.Moveit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Moveit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1161,6 +1190,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E2MQCT9PJM;
@@ -1172,6 +1202,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.Moveit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Moveit-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1181,12 +1212,15 @@
 			baseConfigurationReference = 58DBD37AAF9BB024508ACE0C /* Pods-MoveitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E2MQCT9PJM;
 				INFOPLIST_FILE = MoveitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.MoveitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoveitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moveit.app/Moveit";
 			};
@@ -1197,12 +1231,14 @@
 			baseConfigurationReference = B17429BCB14E124C4975AEDA /* Pods-MoveitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E2MQCT9PJM;
 				INFOPLIST_FILE = MoveitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.MoveitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoveitTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moveit.app/Moveit";
 			};
@@ -1212,12 +1248,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05AAC1E5DDDA182E72A4A98B /* Pods-MoveitUITests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E2MQCT9PJM;
 				INFOPLIST_FILE = MoveitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.MoveitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoveitUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Moveit;
 			};
@@ -1227,12 +1266,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0C45EF4FAF91994C197EC903 /* Pods-MoveitUITests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E2MQCT9PJM;
 				INFOPLIST_FILE = MoveitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hkenny.MoveitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoveitUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Moveit;
 			};
