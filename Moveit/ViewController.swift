@@ -24,6 +24,14 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     //steps progressview
     @IBOutlet weak var progressView: UIProgressView!
     
+    
+    @IBAction func acceptQuest(_ sender: AnyObject) {
+        
+        var treasureType = "Gold" //get from JSON file, won't be global variable cause it will be under an tap Action function
+        
+        UserDefaults.standard.set(treasureType, forKey: "whichTreasureType")
+    }
+    
     //steps sync
     @IBAction func actionTriggered(_ sender: AnyObject) {
         

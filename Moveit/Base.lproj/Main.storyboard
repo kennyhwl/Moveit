@@ -739,6 +739,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="profile.png"/>
                                 <connections>
+                                    <action selector="acceptQuest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1O-Id-oue"/>
                                     <segue destination="f54-dN-Lpf" kind="presentation" id="DWo-Td-NQd"/>
                                 </connections>
                             </button>
@@ -3304,10 +3305,10 @@
         <image name="upload profile pic-4.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2gU-M7-1M4"/>
-        <segue reference="Tnk-4n-9di"/>
+        <segue reference="mof-Gw-X29"/>
         <segue reference="cKN-r9-5js"/>
         <segue reference="KbR-Jp-uRB"/>
+        <segue reference="Tnk-4n-9di"/>
         <segue reference="C3w-iD-hVE"/>
         <segue reference="JLk-WT-C77"/>
     </inferredMetricsTieBreakers>

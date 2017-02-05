@@ -32,8 +32,6 @@
 		342187C81E18F964007D699C /* IBAnimatable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3422AEE61E2B7FC600DB1BDD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */; };
 		342C135F1E38550E003359A9 /* pisavector.png in Resources */ = {isa = PBXBuildFile; fileRef = 342C135E1E38550E003359A9 /* pisavector.png */; };
-		342C13661E385A04003359A9 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 342C13651E385A03003359A9 /* box.png */; };
-		342C13681E3F749C003359A9 /* box2.png in Resources */ = {isa = PBXBuildFile; fileRef = 342C13671E3F749C003359A9 /* box2.png */; };
 		342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CA6EC1D9FA820007EE37B /* StepsViewController.swift */; };
 		34371CF81E308CCC00025DA2 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34371CF71E308CCC00025DA2 /* Mapbox.framework */; };
 		34371CF91E308CCC00025DA2 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34371CF71E308CCC00025DA2 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -65,6 +63,9 @@
 		344E74F01DB49A32002667B3 /* heartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E74EF1DB49A32002667B3 /* heartRateViewController.swift */; };
 		344E74F41DB68C9C002667B3 /* Brushed Aluminium Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */; };
 		344E74F61DB8BEBD002667B3 /* BarChart2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E74F51DB8BEBD002667B3 /* BarChart2ViewController.swift */; };
+		345FA01E1E47960F00713441 /* treasureboxgold.png in Resources */ = {isa = PBXBuildFile; fileRef = 345FA01D1E47960F00713441 /* treasureboxgold.png */; };
+		345FA0291E4796AF00713441 /* treasureboxbronze.png in Resources */ = {isa = PBXBuildFile; fileRef = 345FA0281E4796AF00713441 /* treasureboxbronze.png */; };
+		345FA02B1E4796B500713441 /* treasureboxsilver.png in Resources */ = {isa = PBXBuildFile; fileRef = 345FA02A1E4796B500713441 /* treasureboxsilver.png */; };
 		3469A84C1DC5C1630045862F /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3469A84B1DC5C1630045862F /* DemoData.swift */; };
 		347F2E0F1DC37EE500F952DB /* stepstaken.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E0E1DC37EE500F952DB /* stepstaken.png */; };
 		347F2E151DC37F0E00F952DB /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E141DC37F0E00F952DB /* fire.png */; };
@@ -264,8 +265,6 @@
 		3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		342A57581DAB64AC00EAC04B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/iOSChartsDemo/iOSChartsDemo/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		342C135E1E38550E003359A9 /* pisavector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pisavector.png; sourceTree = "<group>"; };
-		342C13651E385A03003359A9 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
-		342C13671E3F749C003359A9 /* box2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box2.png; sourceTree = "<group>"; };
 		342CA6EC1D9FA820007EE37B /* StepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
 		34371CF71E308CCC00025DA2 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		34371D031E308FE100025DA2 /* MapBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxViewController.swift; sourceTree = "<group>"; };
@@ -296,6 +295,9 @@
 		344E74F31DB68C9C002667B3 /* Brushed Aluminium Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Brushed Aluminium Background.jpg"; path = "../../Brushed Aluminium Background.jpg"; sourceTree = "<group>"; };
 		344E74F51DB8BEBD002667B3 /* BarChart2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChart2ViewController.swift; sourceTree = "<group>"; };
 		34584DCD1DBDC51400FD063A /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		345FA01D1E47960F00713441 /* treasureboxgold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treasureboxgold.png; sourceTree = "<group>"; };
+		345FA0281E4796AF00713441 /* treasureboxbronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treasureboxbronze.png; sourceTree = "<group>"; };
+		345FA02A1E4796B500713441 /* treasureboxsilver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treasureboxsilver.png; sourceTree = "<group>"; };
 		3469A84B1DC5C1630045862F /* DemoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		347F2E0E1DC37EE500F952DB /* stepstaken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stepstaken.png; path = ../../../Downloads/stepstaken.png; sourceTree = "<group>"; };
 		347F2E141DC37F0E00F952DB /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = ../../../Downloads/fire.png; sourceTree = "<group>"; };
@@ -371,8 +373,9 @@
 		34148EFD1DCC7EC500307B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				342C13651E385A03003359A9 /* box.png */,
-				342C13671E3F749C003359A9 /* box2.png */,
+				345FA02A1E4796B500713441 /* treasureboxsilver.png */,
+				345FA0281E4796AF00713441 /* treasureboxbronze.png */,
+				345FA01D1E47960F00713441 /* treasureboxgold.png */,
 				340F52661E2A5ED6006DABEA /* skipping rope-2.png */,
 				34E523FD1E2A83D100E9AA17 /* upload profile pic-4.png */,
 				342C135E1E38550E003359A9 /* pisavector.png */,
@@ -772,6 +775,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345FA01E1E47960F00713441 /* treasureboxgold.png in Resources */,
 				347F2E151DC37F0E00F952DB /* fire.png in Resources */,
 				34FF06501E1D07F900506390 /* shoesy-2.png in Resources */,
 				344D4C9A1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */,
@@ -780,7 +784,9 @@
 				347F2E271DC38A2000F952DB /* settings-3.png in Resources */,
 				344643191E1E863A00688158 /* menubar10medium.png in Resources */,
 				344643211E1E8BD000688158 /* settingsbuttonlight.png in Resources */,
+				345FA02B1E4796B500713441 /* treasureboxsilver.png in Resources */,
 				34148F0D1DCC8AC700307B14 /* DeathtoStock_NotStock-3.jpg in Resources */,
+				345FA0291E4796AF00713441 /* treasureboxbronze.png in Resources */,
 				340F52671E2A5ED6006DABEA /* skipping rope-2.png in Resources */,
 				347F2E0F1DC37EE500F952DB /* stepstaken.png in Resources */,
 				34FF06521E1D081800506390 /* sports vectors.png in Resources */,
@@ -800,9 +806,7 @@
 				3446433B1E1EA41000688158 /* profile.png in Resources */,
 				34FF68E71E1A6407007C28A3 /* skipping rope.png in Resources */,
 				344643391E1EA29300688158 /* information.png in Resources */,
-				342C13681E3F749C003359A9 /* box2.png in Resources */,
 				3446430F1E1E832100688158 /* backbutton2.png in Resources */,
-				342C13661E385A04003359A9 /* box.png in Resources */,
 				3414D7381D81993B00878CE8 /* LaunchScreen.storyboard in Resources */,
 				344643231E1E8E6400688158 /* toolbarbg.png in Resources */,
 				3409F4CD1E1EB85A00E2D688 /* rope.png in Resources */,

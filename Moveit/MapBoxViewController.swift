@@ -25,7 +25,9 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         
     }
     
-    var treasureType = ""
+    //assume that quest is taken and "Accept" is clicked. Proceed to read user location and select JSON file entry and save treasure type to local memory
+    
+    //assume button is pressed
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,14 +88,14 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         // begin single point annotation
         
         let point = MGLPointAnnotation()
-        point.title = "Silver"
+        point.title = "Gold" //get from JSON as type
      //   point.subtitle = ""
-        point.coordinate = CLLocationCoordinate2D(latitude: 43.72305, longitude: 10.396633)
+        point.coordinate = CLLocationCoordinate2D(latitude: 1.297081, longitude: 103.773568) //get from JSON as coordinates
         
         mapView.addAnnotation(point)
         
         //set treasureType to respective type (gold, silver or bronze)
-        treasureType = point.title!
+       // var treasureType = point.title!
         
         mapView.userTrackingMode = .follow
         
@@ -134,11 +136,11 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         if let title = annotation.title , title != nil {
             switch title! {
             case "Gold":
-                imageName = "box2.png"
+                imageName = "treasureboxgold.png"
             case "Silver":
-                imageName = "box2.png"
+                imageName = "treasureboxsilver.png"
             case "Bronze":
-                imageName = "box2.png"
+                imageName = "treasureboxbronze.png"
             
             default:
                 imageName = ""
@@ -169,16 +171,20 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         // Hide the callout view.
         mapView.deselectAnnotation(annotation, animated: false)
         
+        //declarations
+        
+        let treasure = UserDefaults.standard.string(forKey: "whichTreasureType")
+        
         //perform segue
-        if treasureType == "Gold" {
+        if treasure == "Gold" {
             performSegue(withIdentifier: "goldSegue", sender:view)
             }
         
-        if treasureType == "Silver" {
+        if treasure == "Silver" {
             performSegue(withIdentifier: "silverSegue", sender: view)
         }
         
-        if treasureType == "Bronze" {
+        if treasure == "Bronze" {
             performSegue(withIdentifier: "bronzeSegue", sender: view)
         }
         
