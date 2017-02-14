@@ -32,7 +32,7 @@ class dropdownMenuViewController: UIViewController {
     
     // re-present the login page again
     
-    self.performSegue(withIdentifier: "loginView", sender: self);
+    self.performSegue(withIdentifier: "returnLogin", sender: self);
     
     }
     

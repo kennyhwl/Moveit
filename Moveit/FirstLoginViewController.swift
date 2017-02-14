@@ -34,6 +34,7 @@ class FirstLoginViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.hideKeyboardWhenTappedAround()
         
         //make img circle
         img.layer.cornerRadius = img.frame.size.width/2

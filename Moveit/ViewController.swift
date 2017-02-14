@@ -13,9 +13,6 @@ import UserNotifications
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
 
-    @IBOutlet weak var img: UIImageView!
-    
-    @IBOutlet weak var img2: UIImageView!
     //step count label
     @IBOutlet weak var stepCount: UILabel!
     //steps label
@@ -24,13 +21,6 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     //steps progressview
     @IBOutlet weak var progressView: UIProgressView!
     
-    
-    @IBAction func acceptQuest(_ sender: AnyObject) {
-        
-        var treasureType = "Gold" //get from JSON file, won't be global variable cause it will be under an tap Action function
-        
-        UserDefaults.standard.set(treasureType, forKey: "whichTreasureType")
-    }
     
     //steps sync
     @IBAction func actionTriggered(_ sender: AnyObject) {
@@ -138,6 +128,8 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.hideKeyboardWhenTappedAround()
     
         scheduleLocal()
         
@@ -247,3 +239,14 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     
 }
 
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
