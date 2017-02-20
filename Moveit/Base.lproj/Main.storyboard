@@ -35,8 +35,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tP4-BF-mI1">
-                                <rect key="frame" x="0.0" y="28" width="110" height="120"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tP4-BF-mI1">
+                                <rect key="frame" x="0.0" y="30" width="110" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKz-5W-MQB">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
@@ -1056,7 +1056,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rotate">
-                                        <real key="value" value="30"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
@@ -3295,11 +3295,11 @@
         <image name="upload profile pic-4.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JLk-WT-C77"/>
-        <segue reference="cKN-r9-5js"/>
-        <segue reference="mof-Gw-X29"/>
         <segue reference="C3w-iD-hVE"/>
+        <segue reference="mof-Gw-X29"/>
+        <segue reference="cKN-r9-5js"/>
+        <segue reference="Nnh-dd-BRr"/>
         <segue reference="Tnk-4n-9di"/>
-        <segue reference="KbR-Jp-uRB"/>
+        <segue reference="JLk-WT-C77"/>
     </inferredMetricsTieBreakers>
 </document>

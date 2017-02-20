@@ -117,7 +117,7 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         
         
         
-        func getLocation(userLoc: userLocation, locDatabase: [itemLocation], upperR: Double, lowerR: Double) -> itemLocation {
+        func getLocation(userLoc: userLocation, locDatabase: [itemLocation], upperR: Double, lowerR: Double) -> Array<itemLocation> {
             
             let longUser = userLoc.longitude
             let latUser = userLoc.latitude
@@ -131,13 +131,13 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
                 let locItem = CLLocation(latitude: latItem, longitude: longItem)
                 let dist = locItem.distance(from: locUser)
                 print("this is dist \(dist)")
-                
+                // if location is within desired range of user, add it to possible locations to assign array
                 if (dist >= lowerR) && (dist <= upperR) {
                     locsInRange.append(i)
                     print ("this is locsInRange \(locsInRange)")
                     
                         counter += 1
-                    
+                        // categorize them into three types
                         if (dist <= 0.333 * upperR){
                             locsInRange[counter].type = "Bronze"
                         }
@@ -165,27 +165,37 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
             let listLength = locsInRange.count
             let random = Int(arc4random_uniform(UInt32(listLength)))
             print ("this is random \(random)")
-            return locsInRange[random]
+            //if we do not want user to choose
+                //  return locsInRange[random]
+            //if we allow user to choose
+            return locsInRange
         }
         
         
         var selectedLocation = getLocation(userLoc: myLocation, locDatabase: locationDatabase, upperR: 1000, lowerR: 200)
         
         print("this is selected location: \(selectedLocation)")
-
-        let point = MGLPointAnnotation()
-        point.title = selectedLocation.type
-        point.subtitle = " "
-        point.coordinate = CLLocationCoordinate2D(latitude: selectedLocation.latitude, longitude: selectedLocation.longitude)
         
-        var treasureType = selectedLocation.type
+        var pointAnnotations = [MGLPointAnnotation]()
         
-        UserDefaults.standard.set(treasureType, forKey: "whichTreasureType")
+        for i in selectedLocation {
         
-        print("this is the point: \(point)")
+            let point = MGLPointAnnotation()
+            point.title = i.type
+            point.subtitle = " "
+            point.coordinate = CLLocationCoordinate2D(latitude: i.latitude, longitude: i.longitude)
         
-        mapView.addAnnotation(point)
+            pointAnnotations.append(point)
+            
+            //how to identify treasure type upon clicking collect??
+            
+            var treasureType = i.type
         
+            UserDefaults.standard.set(treasureType, forKey: "\(i)whichTreasureType")
+        
+            mapView.addAnnotation(point)
+        
+        }
         
         
         mapView.userTrackingMode = .follow
@@ -262,7 +272,7 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         
         //declarations
         
-        let treasure = UserDefaults.standard.string(forKey: "whichTreasureType")
+   //     let treasure = UserDefaults.standard.string(forKey: "whichTreasureType")
         
 //        struct userLocation2 {
             
@@ -299,21 +309,47 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
             
   //      }
         
+        // check if user is within 10 meters
         
+        let locUser = CLLocation(latitude: 1.3067 , longitude: 103.7555)
+        let locItem = annotation.coordinate
+        let longItem = locItem.longitude
+        let latItem = locItem.latitude
+        let locItemNew = CLLocation(latitude: latItem, longitude: longItem)
+        let distCheck = locItemNew.distance(from: locUser)
         
+        if (distCheck <= 50) {
+            
         
-        //perform segue
-        if treasure == "Gold" {
-            performSegue(withIdentifier: "goldSegue", sender:view)
+            // perform segue based on annotation title
+        
+            if let treasure = annotation.title, treasure != nil {
+            
+                switch treasure! {
+                
+                case "Gold":
+                    performSegue(withIdentifier: "goldSegue", sender:view)
+                
+                case "Silver":
+                    performSegue(withIdentifier: "silverSegue", sender: view)
+            
+                case "Bronze":
+                    performSegue(withIdentifier: "bronzeSegue", sender: view)
+            
+                default:
+                    print("error")
+                }
+            
             }
-        
-        if treasure == "Silver" {
-            performSegue(withIdentifier: "silverSegue", sender: view)
+        } else {
+            
+            let notice = "Notice"
+            let message = "Sorry, you are too far from the item's location!"
+            let ac = UIAlertController(title: notice, message: message, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
         }
-        
-        if treasure == "Bronze" {
-            performSegue(withIdentifier: "bronzeSegue", sender: view)
-        }
+    
         
         
         //add points to account
