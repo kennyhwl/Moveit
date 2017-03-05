@@ -31,6 +31,9 @@
 		342187C71E18F964007D699C /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; };
 		342187C81E18F964007D699C /* IBAnimatable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342187C51E18F549007D699C /* IBAnimatable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3422AEE61E2B7FC600DB1BDD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */; };
+		342A45491E5D3E74000FA281 /* GoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342A45481E5D3E74000FA281 /* GoldViewController.swift */; };
+		342A45541E5D40DA000FA281 /* SilverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342A45531E5D40DA000FA281 /* SilverViewController.swift */; };
+		342A45561E5D40E9000FA281 /* BronzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342A45551E5D40E9000FA281 /* BronzeViewController.swift */; };
 		342C135F1E38550E003359A9 /* pisavector.png in Resources */ = {isa = PBXBuildFile; fileRef = 342C135E1E38550E003359A9 /* pisavector.png */; };
 		342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CA6EC1D9FA820007EE37B /* StepsViewController.swift */; };
 		34371CF81E308CCC00025DA2 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34371CF71E308CCC00025DA2 /* Mapbox.framework */; };
@@ -74,6 +77,7 @@
 		347F2E1D1DC37F3A00F952DB /* commonbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E1C1DC37F3A00F952DB /* commonbg.jpg */; };
 		347F2E271DC38A2000F952DB /* settings-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 347F2E261DC38A2000F952DB /* settings-3.png */; };
 		348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */; };
+		349B6D521E6BFAF300BD9B61 /* FacultyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B6D511E6BFAF300BD9B61 /* FacultyPageViewController.swift */; };
 		34AF1FBD1E190FC300D5F9FD /* TextFieldEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */; };
 		34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */; };
 		34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */; };
@@ -263,6 +267,9 @@
 		342187AA1E18F256007D699C /* ImageEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditor.swift; sourceTree = "<group>"; };
 		342187B51E18F539007D699C /* IBAnimatable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBAnimatable.xcodeproj; path = "../../Downloads/IBAnimatable-master-2/IBAnimatable.xcodeproj"; sourceTree = "<group>"; };
 		3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		342A45481E5D3E74000FA281 /* GoldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoldViewController.swift; sourceTree = "<group>"; };
+		342A45531E5D40DA000FA281 /* SilverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilverViewController.swift; sourceTree = "<group>"; };
+		342A45551E5D40E9000FA281 /* BronzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BronzeViewController.swift; sourceTree = "<group>"; };
 		342A57581DAB64AC00EAC04B /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/iOSChartsDemo/iOSChartsDemo/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		342C135E1E38550E003359A9 /* pisavector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pisavector.png; sourceTree = "<group>"; };
 		342CA6EC1D9FA820007EE37B /* StepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +313,7 @@
 		347F2E1C1DC37F3A00F952DB /* commonbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = commonbg.jpg; path = ../../../Downloads/commonbg.jpg; sourceTree = "<group>"; };
 		347F2E261DC38A2000F952DB /* settings-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-3.png"; path = "../../../Downloads/settings-3.png"; sourceTree = "<group>"; };
 		348A7E411D8ED66B00E9D930 /* FirstLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstLoginViewController.swift; sourceTree = "<group>"; };
+		349B6D511E6BFAF300BD9B61 /* FacultyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyPageViewController.swift; sourceTree = "<group>"; };
 		34AF1FBC1E190FC300D5F9FD /* TextFieldEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEditor.swift; sourceTree = "<group>"; };
 		34AF1FBE1E19127200D5F9FD /* UIViewEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEditor.swift; sourceTree = "<group>"; };
 		34C3909F1DC9E0EE00CBB879 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -460,6 +468,10 @@
 				3469A84B1DC5C1630045862F /* DemoData.swift */,
 				341D966E1DAD297000FF37B3 /* BarChartViewController.swift */,
 				3414D7311D81993B00878CE8 /* Main.storyboard */,
+				349B6D511E6BFAF300BD9B61 /* FacultyPageViewController.swift */,
+				342A45531E5D40DA000FA281 /* SilverViewController.swift */,
+				342A45551E5D40E9000FA281 /* BronzeViewController.swift */,
+				342A45481E5D3E74000FA281 /* GoldViewController.swift */,
 				34371D031E308FE100025DA2 /* MapBoxViewController.swift */,
 				3422AEE51E2B7FC600DB1BDD /* MapViewController.swift */,
 				3407ECC81E1BEA11004E596A /* dropdownMenuViewController.swift */,
@@ -992,10 +1004,13 @@
 				3414D7301D81993B00878CE8 /* ViewController.swift in Sources */,
 				3407ECC91E1BEA11004E596A /* dropdownMenuViewController.swift in Sources */,
 				344E74F61DB8BEBD002667B3 /* BarChart2ViewController.swift in Sources */,
+				342A45491E5D3E74000FA281 /* GoldViewController.swift in Sources */,
+				349B6D521E6BFAF300BD9B61 /* FacultyPageViewController.swift in Sources */,
 				3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */,
 				344D5C3F1DBF8E80000C4716 /* FileSaveHelper.swift in Sources */,
 				348A7E421D8ED66B00E9D930 /* FirstLoginViewController.swift in Sources */,
 				342CA6ED1D9FA820007EE37B /* StepsViewController.swift in Sources */,
+				342A45561E5D40E9000FA281 /* BronzeViewController.swift in Sources */,
 				342187AB1E18F256007D699C /* ImageEditor.swift in Sources */,
 				3414D72E1D81993B00878CE8 /* AppDelegate.swift in Sources */,
 				34C390A01DC9E0EE00CBB879 /* NotificationViewController.swift in Sources */,
@@ -1003,6 +1018,7 @@
 				3422AEE61E2B7FC600DB1BDD /* MapViewController.swift in Sources */,
 				34D338E71E38413F00E8AC4C /* MapBox2ViewController.swift in Sources */,
 				34371D041E308FE100025DA2 /* MapBoxViewController.swift in Sources */,
+				342A45541E5D40DA000FA281 /* SilverViewController.swift in Sources */,
 				341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */,
 				34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */,
 				3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */,

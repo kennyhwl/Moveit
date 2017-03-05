@@ -92,7 +92,7 @@ class heartRateViewController: UIViewController, UIPopoverPresentationController
         MAunits.text = String(MPAunits) + " units"
         VAmins.text = String(VPAmins) + " mins"
         VAunits.text = String(VPAunits) + " units"
-        recommendedLabel.text = String(MVPAunits) + " completed " + "/ " + String(recommendedPA) + " recommended units"
+        recommendedLabel.text = String(MVPAunits) + " " + "/ " + String(recommendedPA) + " recommended units"
         
         
     }

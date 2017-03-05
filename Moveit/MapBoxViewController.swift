@@ -16,6 +16,9 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
     
     @IBOutlet weak var mapView: MGLMapView!
     
+  //  var totalPoints = 0
+  //  var facultyPoints = 0
+    
     var locationManager: CLLocationManager!
     var userLocation: CLLocationCoordinate2D! {
         didSet {
@@ -311,7 +314,8 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         
         // check if user is within 10 meters
         
-        let locUser = CLLocation(latitude: 1.3067 , longitude: 103.7555)
+        //let locUser = CLLocation(latitude: 1.3067 , longitude: 103.7555)
+         let locUser = CLLocation(latitude: 1.3063, longitude: 103.7635)
         let locItem = annotation.coordinate
         let longItem = locItem.longitude
         let latItem = locItem.latitude
@@ -321,7 +325,7 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         if (distCheck <= 50) {
             
         
-            // perform segue based on annotation title
+            // perform segue based on annotation title & give points
         
             if let treasure = annotation.title, treasure != nil {
             
@@ -329,15 +333,48 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
                 
                 case "Gold":
                     performSegue(withIdentifier: "goldSegue", sender:view)
+                    let pointsToGive = 100
+                    
+                    let addPoints = pointsToGive
+                    let oldPoints = UserDefaults.standard.integer(forKey: "accountPoints")
+                    let newPoints = oldPoints + addPoints
+                    
+                    let addFacultyPoints = pointsToGive
+                    let oldFacultyPoints = UserDefaults.standard.integer(forKey: "facultyPoints")
+                    let newFacultyPoints = oldFacultyPoints + addFacultyPoints
+                    UserDefaults.standard.set(newPoints, forKey: "accountPoints")
+                    UserDefaults.standard.set(newFacultyPoints, forKey: "facultyPoints")
                 
                 case "Silver":
                     performSegue(withIdentifier: "silverSegue", sender: view)
+                    let pointsToGive = 75
+                    
+                    let addPoints = pointsToGive
+                    let oldPoints = UserDefaults.standard.integer(forKey: "accountPoints")
+                    let newPoints = oldPoints + addPoints
+                    
+                    let addFacultyPoints = pointsToGive
+                    let oldFacultyPoints = UserDefaults.standard.integer(forKey: "facultyPoints")
+                    let newFacultyPoints = oldFacultyPoints + addFacultyPoints
+                    UserDefaults.standard.set(newPoints, forKey: "accountPoints")
+                    UserDefaults.standard.set(newFacultyPoints, forKey: "facultyPoints")
             
                 case "Bronze":
                     performSegue(withIdentifier: "bronzeSegue", sender: view)
+                    let pointsToGive = 50
+                    
+                    let addPoints = pointsToGive
+                    let oldPoints = UserDefaults.standard.integer(forKey: "accountPoints")
+                    let newPoints = oldPoints + addPoints
+                    
+                    let addFacultyPoints = pointsToGive
+                    let oldFacultyPoints = UserDefaults.standard.integer(forKey: "facultyPoints")
+                    let newFacultyPoints = oldFacultyPoints + addFacultyPoints
+                    UserDefaults.standard.set(newPoints, forKey: "accountPoints")
+                    UserDefaults.standard.set(newFacultyPoints, forKey: "facultyPoints")
             
                 default:
-                    print("error")
+                    performSegue(withIdentifier: "backSegue", sender: view)
                 }
             
             }
@@ -349,26 +386,6 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         }
-    
-        
-        
-        //add points to account
-        
-        //declare stored variable globally (e.g. accountPoints)
-        
-        //use if case loop
-        
-        // if let title = treasureType, title != nil {
-        // switch title! {
-        //  case "Gold":
-        //      accountPoints += 100
-        //  case "Silver":
-        //      accountPoints += 75
-        //  case "Bronze":
-        //      accountPoints += 50
-        // }
-        
-        // }
         
         
         

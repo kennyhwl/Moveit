@@ -90,7 +90,7 @@ override func viewDidLoad() {
     VAmins.text = "\(dateVPAmins) mins"
     VAunits.text = "\(dateVPAunits) mins"
     
-     recommendedLabel.text = String(dateMVPAunits) + " completed " + "/ " + String(dateRecommendedPA) + " recommended units"
+     recommendedLabel.text = String(dateMVPAunits) + " " + "/ " + String(dateRecommendedPA) + " recommended units"
     
     var keyMax = 6
     let keyMin = 0
