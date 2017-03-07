@@ -314,8 +314,8 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         
         // check if user is within 10 meters
         
-        //let locUser = CLLocation(latitude: 1.3067 , longitude: 103.7555)
-         let locUser = CLLocation(latitude: 1.3063, longitude: 103.7635)
+        let locUser = CLLocation(latitude: 1.3067 , longitude: 103.7555)
+        // let locUser = CLLocation(latitude: 1.3063, longitude: 103.7635)
         let locItem = annotation.coordinate
         let longItem = locItem.longitude
         let latItem = locItem.latitude

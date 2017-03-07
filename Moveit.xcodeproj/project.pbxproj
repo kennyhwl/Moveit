@@ -57,6 +57,8 @@
 		3446433B1E1EA41000688158 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 3446433A1E1EA41000688158 /* profile.png */; };
 		344643411E1EAB6200688158 /* settings4.png in Resources */ = {isa = PBXBuildFile; fileRef = 344643401E1EAB6200688158 /* settings4.png */; };
 		3448EF0E1D853DE900AED922 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */; };
+		344C5B4E1E6F139C00ED49C4 /* FacultyPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C5B4D1E6F139C00ED49C4 /* FacultyPointsViewController.swift */; };
+		344C5B5B1E6F21DC00ED49C4 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C5B5A1E6F21DC00ED49C4 /* MyCollectionViewCell.swift */; };
 		344D4C9A1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */; };
 		344D4C9B1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */; };
 		344D4C9C1E30C43E00BF5C86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */; };
@@ -293,6 +295,8 @@
 		3446433A1E1EA41000688158 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = ../../../Downloads/profile.png; sourceTree = "<group>"; };
 		344643401E1EAB6200688158 /* settings4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings4.png; path = ../../../Downloads/settings4.png; sourceTree = "<group>"; };
 		3448EF0D1D853DE900AED922 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		344C5B4D1E6F139C00ED49C4 /* FacultyPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacultyPointsViewController.swift; sourceTree = "<group>"; };
+		344C5B5A1E6F21DC00ED49C4 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		344D4C991E30C43E00BF5C86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		344D4C9D1E30C4DA00BF5C86 /* Moveit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moveit-Bridging-Header.h"; sourceTree = "<group>"; };
 		344D4C9E1E30C4DA00BF5C86 /* MoveitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoveitTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -468,6 +472,8 @@
 				3469A84B1DC5C1630045862F /* DemoData.swift */,
 				341D966E1DAD297000FF37B3 /* BarChartViewController.swift */,
 				3414D7311D81993B00878CE8 /* Main.storyboard */,
+				344C5B4D1E6F139C00ED49C4 /* FacultyPointsViewController.swift */,
+				344C5B5A1E6F21DC00ED49C4 /* MyCollectionViewCell.swift */,
 				349B6D511E6BFAF300BD9B61 /* FacultyPageViewController.swift */,
 				342A45531E5D40DA000FA281 /* SilverViewController.swift */,
 				342A45551E5D40E9000FA281 /* BronzeViewController.swift */,
@@ -1001,6 +1007,7 @@
 			files = (
 				3469A84C1DC5C1630045862F /* DemoData.swift in Sources */,
 				344E74F01DB49A32002667B3 /* heartRateViewController.swift in Sources */,
+				344C5B4E1E6F139C00ED49C4 /* FacultyPointsViewController.swift in Sources */,
 				3414D7301D81993B00878CE8 /* ViewController.swift in Sources */,
 				3407ECC91E1BEA11004E596A /* dropdownMenuViewController.swift in Sources */,
 				344E74F61DB8BEBD002667B3 /* BarChart2ViewController.swift in Sources */,
@@ -1022,6 +1029,7 @@
 				341096D31D8FF587001E6B8D /* IntroPopUpViewController.swift in Sources */,
 				34AF1FBF1E19127200D5F9FD /* UIViewEditor.swift in Sources */,
 				3414D75C1D81A33600878CE8 /* RegisterPageViewController.swift in Sources */,
+				344C5B5B1E6F21DC00ED49C4 /* MyCollectionViewCell.swift in Sources */,
 				34AF1FBD1E190FC300D5F9FD /* TextFieldEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
