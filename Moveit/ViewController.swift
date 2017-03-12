@@ -26,7 +26,18 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     @IBAction func actionTriggered(_ sender: AnyObject) {
         
         //get values from fitbit
-    
+        
+        //TO RECOGNISE USER
+        //let userCheck = UserDefaults.standard.string(forKey: "userFirstName")
+        //if userCheck == "Caroline" {
+        
+        
+        
+        
+        //}
+        
+        // STEPS SYNC
+        
         let steps = Demo.sharedInstance.userDemoData["step"]["0"].int!
         
         //get from json file
@@ -43,20 +54,10 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         //store locally the percentage and steps
         UserDefaults.standard.set(percentage, forKey: "lastStoredSteps%");
         UserDefaults.standard.set(lastStepCounter, forKey: "lastStoredSteps")
-    }
-    
-    //activity label
-    @IBOutlet weak var activityLabel: UILabel!
-    //activity percentage
-    @IBOutlet weak var activityPercentageLabel: UILabel!
-    //activity progress view
-    @IBOutlet weak var activityProgressView: UIProgressView!
-    
-    //activity sync
-    @IBAction func activitySync(_ sender: AnyObject) {
         
+        // ACTIVITY SYNC
         //get values from Caroline for MPA/VPA
-    
+        
         
         let MPAmins = Demo.sharedInstance.userDemoData["mpa"]["0"].int!
         var MPAunits = MPAmins
@@ -79,8 +80,15 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         UserDefaults.standard.set(MVPAunits, forKey: "lastStoredUnits");
         let percentage2 = ratioPA*100;
         UserDefaults.standard.set(percentage2, forKey: "lastStoredActivity%")
-        
     }
+    
+    //activity label
+    @IBOutlet weak var activityLabel: UILabel!
+    //activity percentage
+    @IBOutlet weak var activityPercentageLabel: UILabel!
+    //activity progress view
+    @IBOutlet weak var activityProgressView: UIProgressView!
+    
     
     //notification function
     
@@ -95,6 +103,8 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         content.categoryIdentifier = "alarm"
         content.userInfo = ["customData": "fizzbuzz"]
         content.sound = UNNotificationSound.default()
+            
+        
         
         var dateComponents = DateComponents()
         dateComponents.day = 7
@@ -133,6 +143,16 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     
         scheduleLocal()
         
+        //trigger segue to map if Accepted notification
+        
+        let acceptNot = UserDefaults.standard.integer(forKey: "acceptNot")
+        if acceptNot == 1 {
+            
+            
+            self.performSegue(withIdentifier: "taskMap", sender: self)
+            
+            
+        }
         //show last stored values before sync
         var lastStepCountPercentage = UserDefaults.standard.float(forKey: "lastStoredSteps%")
         var lastStepCount = UserDefaults.standard.float(forKey: "lastStoredSteps")

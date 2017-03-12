@@ -71,6 +71,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         return true
     }
+    
+    // Push notification received
+    func application(_ application: UIApplication, didReceiveRemoteNotification data: [AnyHashable : Any]) {
+        
+        let acceptNot = 1
+        UserDefaults.standard.set(acceptNot, forKey: "acceptNot")
+        
+    }
 
     // Caroline: add url handler function (ios build-in)
     func application(_ application: UIApplication, handleOpen url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) ->Bool {

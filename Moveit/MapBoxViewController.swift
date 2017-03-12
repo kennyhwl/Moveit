@@ -314,8 +314,8 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
         
         // check if user is within 10 meters
         
-        let locUser = CLLocation(latitude: 1.3067 , longitude: 103.7555)
-        // let locUser = CLLocation(latitude: 1.3063, longitude: 103.7635)
+      //  let locUser = CLLocation(latitude: 1.3067 , longitude: 103.7555)
+         let locUser = CLLocation(latitude: 1.3063, longitude: 103.7635)
         let locItem = annotation.coordinate
         let longItem = locItem.longitude
         let latItem = locItem.latitude
@@ -344,6 +344,9 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
                     let newFacultyPoints = oldFacultyPoints + addFacultyPoints
                     UserDefaults.standard.set(newPoints, forKey: "accountPoints")
                     UserDefaults.standard.set(newFacultyPoints, forKey: "facultyPoints")
+                    //reset notification check value
+                    let acceptNot = 0
+                    UserDefaults.standard.set(acceptNot, forKey: "acceptNot")
                 
                 case "Silver":
                     performSegue(withIdentifier: "silverSegue", sender: view)
@@ -358,6 +361,9 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
                     let newFacultyPoints = oldFacultyPoints + addFacultyPoints
                     UserDefaults.standard.set(newPoints, forKey: "accountPoints")
                     UserDefaults.standard.set(newFacultyPoints, forKey: "facultyPoints")
+                    //reset notification check value
+                    let acceptNot = 0
+                    UserDefaults.standard.set(acceptNot, forKey: "acceptNot")
             
                 case "Bronze":
                     performSegue(withIdentifier: "bronzeSegue", sender: view)
@@ -372,6 +378,9 @@ class MapBoxViewController: UIViewController, MGLMapViewDelegate {
                     let newFacultyPoints = oldFacultyPoints + addFacultyPoints
                     UserDefaults.standard.set(newPoints, forKey: "accountPoints")
                     UserDefaults.standard.set(newFacultyPoints, forKey: "facultyPoints")
+                    //reset notification check value
+                    let acceptNot = 0
+                    UserDefaults.standard.set(acceptNot, forKey: "acceptNot")
             
                 default:
                     performSegue(withIdentifier: "backSegue", sender: view)
